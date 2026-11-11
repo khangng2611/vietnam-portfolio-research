@@ -1,0 +1,14 @@
+[
+  {
+    "strategy": "C1",
+    "max_daily_error_from_frozen_asset_prices": 2.5673907444456745e-16
+  },
+  {
+    "strategy": "B1",
+    "max_daily_error_from_frozen_asset_prices": 2.437286483747414e-16
+  },
+  {
+    "strategy": "B2",
+    "max_daily_error_from_frozen_asset_prices": 2.5673907444456745e-16
+  }
+]

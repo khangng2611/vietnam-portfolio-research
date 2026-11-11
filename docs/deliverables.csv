@@ -1,0 +1,13 @@
+item,status,description,path
+D01,PENDING_SOURCE,VN30TRI OOS641,results/reference/benchmark_status.csv
+D02,PENDING_SOURCE,VN30TRI IS906,results/reference/benchmark_status.csv
+D03,COMPLETE,294 dated portfolio drawdown episodes,results/derived/drawdown_episodes.csv
+D04,PENDING_D01_D02,Objective VN30TRI decline labels,results/reference/market_state_status.csv
+D05,COMPLETE,Daily class contributions and linked wealth,results/derived/class_contribution_summary.csv
+D06,COMPLETE,"Three manuscript figures plus underwater, PNG/PDF/SVG",figures/
+D07,COMPLETE,32-series source and units dictionary,data_public/series_dictionary.csv
+D08,COMPLETE,Finalized XGBoost to BL source and timing documentation,docs/methodology.md
+D09,COMPLETE,"Selection, constraints and accounting code/source map",code/
+D10,LOCAL_CANDIDATE_PUBLIC_PENDING_APPROVAL,"Standalone research package, provisional citation and local tag",docs/release_review.md
+D11,COMPLETE,24 main + 128 AB metrics and event turnover reproduced,results/derived/reproduction_summary.json
+D12,COMPLETE_LOCAL_HANDOFF,Vietnamese results/paper integration handoff,docs/paper_handoff_vi.md

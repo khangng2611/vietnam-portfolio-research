@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Local release candidate. Confirm the author list, project license and published version URL before using this citation in a manuscript."
+type: software
+title: "Vietnam Long-Only Multi-Asset Portfolio — Research Code and Derived Results"
+version: 0.1.0-rc1
+authors:
+  - family-names: Nguyen
+    given-names: Phuc Khang
+abstract: "Representative equity selection and capital allocation with Black–Litterman, saved XGBoost views, a feasible fixed-weight comparator, and descriptive portfolio evidence."
+keywords:
+  - portfolio optimization
+  - Black-Litterman
+  - XGBoost
+  - Vietnam

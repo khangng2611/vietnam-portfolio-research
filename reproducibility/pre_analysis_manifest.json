@@ -1,0 +1,75 @@
+{
+  "analysis_id": "paper5-descriptive-20261111-v1",
+  "status": "prepared",
+  "started_at": "2026-11-11T16:03:21.017046+00:00",
+  "source_commit": "67540341a7819cfc4cc8ea4b202a325bafd0b583",
+  "baseline_id": "availability-observed-contract-20261012T233110",
+  "B_run_id": "core-evidence-20261023T211011",
+  "C_run_id": "extensions-C-20261104T210906",
+  "fitting_or_optimization": false,
+  "definition": {
+    "phases": {
+      "IS": [
+        "2020-02-18",
+        "2023-09-29",
+        906
+      ],
+      "OOS": [
+        "2023-09-29",
+        "2026-04-29",
+        641
+      ]
+    },
+    "drawdown": "separate phase anchor, last tied peak, first trough, recovery NAV>=peak within 1e-12, count strictly underwater sessions, unresolved right-censored",
+    "attribution": "daily start-of-return weight times asset return; class wealth increment = previous phase NAV times class daily contribution, summed by class",
+    "market_state": "VN30TRI continuous peak, drawdown<=-0.10, ex-post close label; pending source",
+    "cost_grid": [
+      0,
+      10,
+      25,
+      50
+    ]
+  },
+  "inputs": [
+    {
+      "path": "extensions_C_v1/runs/extensions-C-20261104T210906/outputs/C1_daily.csv",
+      "sha256": "5c3ca6b10b7b3217ea3e2c16d509cceaa642d39dfeddd9864219f0d0dd2fa407"
+    },
+    {
+      "path": "extensions_C_v1/runs/extensions-C-20261104T210906/outputs/C1_trades.csv",
+      "sha256": "8febdf70d48d153342f624cc182f44db000e0d8bb993ca7ceef5f74397167e3d"
+    },
+    {
+      "path": "extensions_C_v1/runs/extensions-C-20261104T210906/outputs/C1-FixedRule-K5-7_holdings_weights.csv",
+      "sha256": "e1f12b1cca48d1fdf96526a1d6e669a4d3d67fd984a1cb2af9d9e3b97837960b"
+    },
+    {
+      "path": "extensions_C_v1/runs/extensions-C-20261104T210906/outputs/C1_results.csv",
+      "sha256": "69b204ebb9ffbd5b9822896ee149a058fdd8979ea37098194bbe861bdde72d20"
+    },
+    {
+      "path": "outputs/step1/readiness_20261012/runs/availability-observed-contract-20261012T233110/aligned_prices.csv",
+      "sha256": "c6789fb99526608cc0e5426de2b8ff59bee14148d908828bd72ed0d3e5814c84"
+    },
+    {
+      "path": "extensions_C_v1/runs/extensions-C-20261104T210906/outputs/B1_BLnoML_holdings_weights.csv",
+      "sha256": "4102fa45d087278b363e6908672340944c27c3394f6b72e4bf233d0898888f56"
+    },
+    {
+      "path": "extensions_C_v1/runs/extensions-C-20261104T210906/outputs/B2_BLML_holdings_weights.csv",
+      "sha256": "d518ccaed1aab048945242596ec844ac4267010cbab5dfb823327855f1bbed4c"
+    },
+    {
+      "path": "experiments_core/runs/core-evidence-20261023T211011/outputs/cost_sensitivity.csv",
+      "sha256": "75f7c63296306a5388fbd61231a01c1332560a0435901d23c20940ed42cefcfa"
+    },
+    {
+      "path": "experiments_core/runs/core-evidence-20261023T211011/outputs/optimizer_ladder_metrics.csv",
+      "sha256": "bda45d6a6ad790d608c412f504dd5902efd516b0545fe27fcd556a45b611c447"
+    },
+    {
+      "path": "guide_5.md",
+      "sha256": "ec25daf73d06bd7b241c470741df853dee84895148fd0225629b2a15b13a5073"
+    }
+  ]
+}

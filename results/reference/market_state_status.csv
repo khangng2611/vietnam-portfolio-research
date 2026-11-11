@@ -1,0 +1,2 @@
+item,status,classification,accepted_market_state_rows,reason
+D04,PENDING_D01_D02,VN30TRI continuous drawdown <= -10%,0,No admitted VN30TRI history

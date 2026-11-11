@@ -1,0 +1,30 @@
+{
+  "analysis_id": "paper5-descriptive-20261111-v1",
+  "status": "succeeded_local_release_candidate",
+  "prepared_protocol_sha256": "f88119acd84ca1a55e2d72af329405278bb881a54565dafc5bd3ff797967488b",
+  "completed_at": "2026-11-11T16:19:43.424422+00:00",
+  "interpreter": "Python 3.12.0",
+  "execution": [
+    "python -B reproducibility/prepare.py (inside original parent checkout)",
+    "python -B code/reproduce.py",
+    "python -B reproducibility/verify_release.py"
+  ],
+  "models_refitted": false,
+  "strategies_reoptimized": false,
+  "source_input_hashes_verified": true,
+  "summary": {
+    "accepted_metric_rows_reproduced": 24,
+    "AB_metric_rows_reproduced": 128,
+    "phase_strategy_pairs": 6,
+    "episodes": 294,
+    "attribution_max_daily_error": 3.0184188481996443e-16,
+    "attribution_max_terminal_error": 6.261657858885883e-14,
+    "status": "VERIFIED_LOCAL_CANDIDATE",
+    "tests_passed": 6,
+    "original_source_mappings": 41,
+    "publication": "PENDING_AUTHOR_LICENSE_AND_DERIVED_DATA_APPROVAL",
+    "VN30TRI": "PENDING_SOURCE"
+  },
+  "public_release": "pending author approval, license, derived-data redistribution clearance",
+  "figure_QA": "four PNG figures visually inspected; PNG/PDF/SVG exported"
+}

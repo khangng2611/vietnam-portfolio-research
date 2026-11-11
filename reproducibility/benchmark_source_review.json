@@ -1,0 +1,14 @@
+{
+  "review_date": "2026-11-11",
+  "candidate": "VN30TRI",
+  "status": "PENDING_SOURCE",
+  "admitted_daily_rows": 0,
+  "rules_version": "HOSE v4.0 Decision747 2024-12-30",
+  "prior_source_audit_sha256": "89b5ffd420599be9ab51fe75ba36697785149e99b59642fe0a32dbbc2f4f37a3",
+  "findings": [
+    "Official ground rules confirm EOD total-return identity and dividend reinvestment",
+    "HOSE public EOD retrieval returned app shell only",
+    "FiinQuant historical daily-close API requires authenticated access; entitlement/export not supplied",
+    "No research-use-approved daily file admitted for either phase"
+  ]
+}

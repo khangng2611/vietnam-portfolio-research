@@ -1,0 +1,289 @@
+[
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/backtest/__init__.py",
+    "released_path": "code/frozen_baseline/backtest/__init__.py",
+    "source_sha256": "2af1e1e62cd71488a24f822cbfe785e62253f4a23ae5a2181976e0147afe1c50",
+    "released_sha256": "2af1e1e62cd71488a24f822cbfe785e62253f4a23ae5a2181976e0147afe1c50",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/backtest/__main__.py",
+    "released_path": "code/frozen_baseline/backtest/__main__.py",
+    "source_sha256": "f71d9757bc4ebeaaee0fce50a78720fb73174be3c75f455ecf45b520086804ce",
+    "released_sha256": "f71d9757bc4ebeaaee0fce50a78720fb73174be3c75f455ecf45b520086804ce",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/backtest/_black_litterman.py",
+    "released_path": "code/frozen_baseline/backtest/_black_litterman.py",
+    "source_sha256": "838240ffaa2c01a7cb85973ce624fa716adb9891d6a645269f0145db6af33439",
+    "released_sha256": "838240ffaa2c01a7cb85973ce624fa716adb9891d6a645269f0145db6af33439",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/backtest/_cli.py",
+    "released_path": "code/frozen_baseline/backtest/_cli.py",
+    "source_sha256": "5bf02325f8ab8c802c10e696be12f94ee08aea588a8b41a142ea3b70ae8890bf",
+    "released_sha256": "5bf02325f8ab8c802c10e696be12f94ee08aea588a8b41a142ea3b70ae8890bf",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/backtest/_compare.py",
+    "released_path": "code/frozen_baseline/backtest/_compare.py",
+    "source_sha256": "384fd31a455c02d350a1c3f4c2cd8951a0c6fb5fa6efcbfac480257b1bcd886d",
+    "released_sha256": "384fd31a455c02d350a1c3f4c2cd8951a0c6fb5fa6efcbfac480257b1bcd886d",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/backtest/_compare_backtests.py",
+    "released_path": "code/frozen_baseline/backtest/_compare_backtests.py",
+    "source_sha256": "773fe8a3de86721a6f966df1894663f98c4185b7f7c10a8201bf3d43a29e0a9b",
+    "released_sha256": "773fe8a3de86721a6f966df1894663f98c4185b7f7c10a8201bf3d43a29e0a9b",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/backtest/_compare_ranking.py",
+    "released_path": "code/frozen_baseline/backtest/_compare_ranking.py",
+    "source_sha256": "db5561ad2036ba5dd9dc5644e62d81ee0408845e01606a8a0aeac9e2a9dcfbb8",
+    "released_sha256": "db5561ad2036ba5dd9dc5644e62d81ee0408845e01606a8a0aeac9e2a9dcfbb8",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/backtest/_data_helpers.py",
+    "released_path": "code/frozen_baseline/backtest/_data_helpers.py",
+    "source_sha256": "df6e0f0528cd3c2120671f2f24e11d8a7d1e0e5bd620dd7c5c3b1e15d02a6f30",
+    "released_sha256": "df6e0f0528cd3c2120671f2f24e11d8a7d1e0e5bd620dd7c5c3b1e15d02a6f30",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/backtest/_loop.py",
+    "released_path": "code/frozen_baseline/backtest/_loop.py",
+    "source_sha256": "87dc6fba5c278204d6c4677341e75c8d4be8e4508fc551902a0902c1fdedddfa",
+    "released_sha256": "87dc6fba5c278204d6c4677341e75c8d4be8e4508fc551902a0902c1fdedddfa",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/backtest/_main.py",
+    "released_path": "code/frozen_baseline/backtest/_main.py",
+    "source_sha256": "353572eb6656ee5bd4a1088499a696fab18b297115bef41f9ffe82832693fb75",
+    "released_sha256": "353572eb6656ee5bd4a1088499a696fab18b297115bef41f9ffe82832693fb75",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/backtest/_metrics.py",
+    "released_path": "code/frozen_baseline/backtest/_metrics.py",
+    "source_sha256": "bfefa8de0fa022bceeb8db7b292f8ead73a3520ca79791c3e18772e15834fa3d",
+    "released_sha256": "bfefa8de0fa022bceeb8db7b292f8ead73a3520ca79791c3e18772e15834fa3d",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/backtest/_optimizer.py",
+    "released_path": "code/frozen_baseline/backtest/_optimizer.py",
+    "source_sha256": "65fd5b54065a6c3ecef6f64caa1665c95ec033c85003d245c81f3bdd470120a9",
+    "released_sha256": "65fd5b54065a6c3ecef6f64caa1665c95ec033c85003d245c81f3bdd470120a9",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/backtest/_prediction.py",
+    "released_path": "code/frozen_baseline/backtest/_prediction.py",
+    "source_sha256": "b307ad8b2321ab8ba579b69c6093048f86b3718420b973f0172a4689aaa6760e",
+    "released_sha256": "b307ad8b2321ab8ba579b69c6093048f86b3718420b973f0172a4689aaa6760e",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/backtest/_ranking_helpers.py",
+    "released_path": "code/frozen_baseline/backtest/_ranking_helpers.py",
+    "source_sha256": "770eb8352bee4faa7f58d5570461c169e319facb1b257ea1ee3577582c76078f",
+    "released_sha256": "770eb8352bee4faa7f58d5570461c169e319facb1b257ea1ee3577582c76078f",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/backtest/_views.py",
+    "released_path": "code/frozen_baseline/backtest/_views.py",
+    "source_sha256": "08ae22c8829986fbe4692c25b3df23d883079708121b0874c66cbacf985e52d9",
+    "released_sha256": "08ae22c8829986fbe4692c25b3df23d883079708121b0874c66cbacf985e52d9",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/gen_view/__init__.py",
+    "released_path": "code/frozen_baseline/gen_view/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "released_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/gen_view/ranking/__init__.py",
+    "released_path": "code/frozen_baseline/gen_view/ranking/__init__.py",
+    "source_sha256": "4dba89a4ce573c360aea6526c6f142cf4145666c0406b20a5697aa786b44a324",
+    "released_sha256": "4dba89a4ce573c360aea6526c6f142cf4145666c0406b20a5697aa786b44a324",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/gen_view/ranking/config.py",
+    "released_path": "code/frozen_baseline/gen_view/ranking/config.py",
+    "source_sha256": "fcb1f1625af1030b49808c2f87f153875be0bb0d9d80d6fd76db185b5235ab74",
+    "released_sha256": "fcb1f1625af1030b49808c2f87f153875be0bb0d9d80d6fd76db185b5235ab74",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/gen_view/ranking/feature_engineering.py",
+    "released_path": "code/frozen_baseline/gen_view/ranking/feature_engineering.py",
+    "source_sha256": "d68aafa1dfad9162cce2444d31a582fc2fc605032e86e3c3522ec0b6f19f046e",
+    "released_sha256": "d68aafa1dfad9162cce2444d31a582fc2fc605032e86e3c3522ec0b6f19f046e",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/gen_view/ranking/ranking_model.py",
+    "released_path": "code/frozen_baseline/gen_view/ranking/ranking_model.py",
+    "source_sha256": "1bde73b9d45a81a4a5f5919578fe4d701d4fa2937a73cb79b12282b1bac80118",
+    "released_sha256": "1bde73b9d45a81a4a5f5919578fe4d701d4fa2937a73cb79b12282b1bac80118",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/gen_view/ranking/relative_views.py",
+    "released_path": "code/frozen_baseline/gen_view/ranking/relative_views.py",
+    "source_sha256": "4fafdef9a50cc9b5a0f3b5dc3e8e453d3f6ff4e9f761d168db04a0b049ff3391",
+    "released_sha256": "4fafdef9a50cc9b5a0f3b5dc3e8e453d3f6ff4e9f761d168db04a0b049ff3391",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/gen_view/ranking/risk_management.py",
+    "released_path": "code/frozen_baseline/gen_view/ranking/risk_management.py",
+    "source_sha256": "fa05857a39aa76b682bc51e894bbb11f9e8ddf8f5aa45da8f0f2742a34d23743",
+    "released_sha256": "fa05857a39aa76b682bc51e894bbb11f9e8ddf8f5aa45da8f0f2742a34d23743",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/gen_view/ranking/stock_selection.py",
+    "released_path": "code/frozen_baseline/gen_view/ranking/stock_selection.py",
+    "source_sha256": "ecd8fdf4b3f42fac0dcbf4e5e93d4e8547be2860047a37dd3ed43e7edd464bc6",
+    "released_sha256": "ecd8fdf4b3f42fac0dcbf4e5e93d4e8547be2860047a37dd3ed43e7edd464bc6",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/gen_view/view_generators.py",
+    "released_path": "code/frozen_baseline/gen_view/view_generators.py",
+    "source_sha256": "75fb710d0f6e01543678eec467ffcaa7e7dcea8df4e153bd538d4040317aa161",
+    "released_sha256": "75fb710d0f6e01543678eec467ffcaa7e7dcea8df4e153bd538d4040317aa161",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/gen_view/xgboost/__init__.py",
+    "released_path": "code/frozen_baseline/gen_view/xgboost/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "released_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/gen_view/xgboost/config.py",
+    "released_path": "code/frozen_baseline/gen_view/xgboost/config.py",
+    "source_sha256": "ad3c019196db20e3638d6163e25ab52266e9a960086a428eb48286f27a8f033e",
+    "released_sha256": "ad3c019196db20e3638d6163e25ab52266e9a960086a428eb48286f27a8f033e",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/gen_view/xgboost/model_train.py",
+    "released_path": "code/frozen_baseline/gen_view/xgboost/model_train.py",
+    "source_sha256": "5fca600d0ef171604a7369ae103c966f8849fe03f224f53c1437cd4bca6c537c",
+    "released_sha256": "5fca600d0ef171604a7369ae103c966f8849fe03f224f53c1437cd4bca6c537c",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/gen_view/xgboost/xgboost_core.py",
+    "released_path": "code/frozen_baseline/gen_view/xgboost/xgboost_core.py",
+    "source_sha256": "7cf20b62613811dfd63da9d83cfcb9b0e85283d8b13c1b6a6e64de01f29956af",
+    "released_sha256": "7cf20b62613811dfd63da9d83cfcb9b0e85283d8b13c1b6a6e64de01f29956af",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/utils/__init__.py",
+    "released_path": "code/frozen_baseline/utils/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "released_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/utils/availability.py",
+    "released_path": "code/frozen_baseline/utils/availability.py",
+    "source_sha256": "312b136e661d26ecdc7c4699b0ec428a2fc52b64f015cecc5aa567cb404d6ef0",
+    "released_sha256": "312b136e661d26ecdc7c4699b0ec428a2fc52b64f015cecc5aa567cb404d6ef0",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/utils/data_loader.py",
+    "released_path": "code/frozen_baseline/utils/data_loader.py",
+    "source_sha256": "869040738b643030f913ff12fd1522113ca93112b8f7326ad8373648a880a3de",
+    "released_sha256": "869040738b643030f913ff12fd1522113ca93112b8f7326ad8373648a880a3de",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/utils/indicators.py",
+    "released_path": "code/frozen_baseline/utils/indicators.py",
+    "source_sha256": "09ad61fc7ca52b2bc9c1a77c79f323d5337adb4e7ea92dc43215002c649d4de0",
+    "released_sha256": "09ad61fc7ca52b2bc9c1a77c79f323d5337adb4e7ea92dc43215002c649d4de0",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/utils/plot_asset_returns.py",
+    "released_path": "code/frozen_baseline/utils/plot_asset_returns.py",
+    "source_sha256": "0cf667c95eb9d01d75affc61a57d13a12f13fa3b3df83a264e99c640c24141b2",
+    "released_sha256": "0cf667c95eb9d01d75affc61a57d13a12f13fa3b3df83a264e99c640c24141b2",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/utils/plot_combinatorial_selection.py",
+    "released_path": "code/frozen_baseline/utils/plot_combinatorial_selection.py",
+    "source_sha256": "6c7a36095f9d18cd43e625eda4d22b1fb44d0231e236f126ce49bb4e82c4158c",
+    "released_sha256": "6c7a36095f9d18cd43e625eda4d22b1fb44d0231e236f126ce49bb4e82c4158c",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/utils/plot_timeline_is_oos.py",
+    "released_path": "code/frozen_baseline/utils/plot_timeline_is_oos.py",
+    "source_sha256": "2b91feb89500b4fb886b20643040e8110be8fb473b7727ce6ea7d0f78e6f735d",
+    "released_sha256": "2b91feb89500b4fb886b20643040e8110be8fb473b7727ce6ea7d0f78e6f735d",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/utils/view_logger.py",
+    "released_path": "code/frozen_baseline/utils/view_logger.py",
+    "source_sha256": "4d8e718ea23bd58cd252db90847728efab9876b4c7a0343708cdbf91e6f01306",
+    "released_sha256": "4d8e718ea23bd58cd252db90847728efab9876b4c7a0343708cdbf91e6f01306",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/config.py",
+    "released_path": "code/frozen_baseline/config.py",
+    "source_sha256": "be34439d42aca71919c40df2d8b31dd191a0f58efad5f6ba712d29a708aa77bf",
+    "released_sha256": "be34439d42aca71919c40df2d8b31dd191a0f58efad5f6ba712d29a708aa77bf",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/outputs/step1/readiness_20261012/candidate_workspace/assets_1.json",
+    "released_path": "code/frozen_baseline/assets_1.json",
+    "source_sha256": "17f8dcdc12e5bcc85636de55aace06f5ac9a438e35f130ee0718cf813f8f2a42",
+    "released_sha256": "17f8dcdc12e5bcc85636de55aace06f5ac9a438e35f130ee0718cf813f8f2a42",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/experiments_core/src/run.py",
+    "released_path": "code/frozen_experiments/run.py",
+    "source_sha256": "9c81d8dfb6ff79db7c80de2accfa60cf7931086779b1debd774aa39199f89122",
+    "released_sha256": "9c81d8dfb6ff79db7c80de2accfa60cf7931086779b1debd774aa39199f89122",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "experiments_core/runs/core-evidence-20261023T211011/source_snapshot/experiments_core/src/core.py",
+    "released_path": "code/accounting.py",
+    "source_sha256": "6f1a59010a5926e1b63ef5705a1fd0f09cc98bbb55fc07de55b79e4764ee39e6",
+    "released_sha256": "6f1a59010a5926e1b63ef5705a1fd0f09cc98bbb55fc07de55b79e4764ee39e6",
+    "transformation": "byte-identical copy"
+  },
+  {
+    "source": "extensions_C_v1/runs/extensions-C-20261104T210906/source_snapshot/extensions_C_v1/C1_fixed_rule.py",
+    "source_sha256": "f1d7ffa5fe79469c8b2526c2755a2f5c1934f993203ca8aa42583d99dc7aa698",
+    "released_path": "code/fixed_rule.py",
+    "released_sha256": "38402478432144e2060c4a3e7934bec7d621af052c54e3f1b5c28e1e042e7642",
+    "transformation": "verbatim fixed_targets function with numpy import; runner wrapper omitted"
+  }
+]

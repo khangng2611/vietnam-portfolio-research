@@ -1,0 +1,57 @@
+{
+  "review_date": "2026-11-12",
+  "status": "NO_ADMITTED_DAILY_SERIES",
+  "requested_series": "HOSE VN30TRI, end-of-day total-return index levels",
+  "required_window": {
+    "first_anchor": "2020-02-18",
+    "IS_returns": 906,
+    "OOS_anchor": "2023-09-29",
+    "OOS_returns": 641,
+    "last_date": "2026-04-29",
+    "unique_required_levels": 1548
+  },
+  "user_entitlement": "User reports institutional/vendor access absent or unknown",
+  "attempts": [
+    {
+      "provider": "TradingView",
+      "url": "https://www.tradingview.com/chart/?symbol=HOSE%3AVN30TRI",
+      "operation": "Official UI Manage layouts → Download chart data → Download at daily interval",
+      "outcome": "Upgrade plan prompt; no CSV downloaded",
+      "identifier": "HOSE_DLY:VN30TRI",
+      "FIGI_observed": "BBG009LPSM57",
+      "evidence": "artifacts/vn30tri-source-20261112/tradingview_export_gate.txt"
+    },
+    {
+      "provider": "EODHD",
+      "operation": "symbols/search",
+      "query": {
+        "query_string": "VN30TRI",
+        "type": "index",
+        "limit": 10
+      },
+      "outcome": "HTTP200, zero records",
+      "provider_request_id": "a84a4759-9cbc-415f-bb89-6d189c7300d7",
+      "note": "Exact query only; not evidence that every possible alias is unsupported"
+    },
+    {
+      "provider": "FiinQuant",
+      "url": "https://docs.fiinquant.vn/ham-va-cong-thuc/2.-du-lieu-giao-dich/2.2.-ham-du-lieu-lich-su.md",
+      "outcome": "Authenticated historical close API documented; VN30TRI coverage and user entitlement still require provider confirmation"
+    },
+    {
+      "provider": "FiinQuant education",
+      "url": "https://docs.fiinquant.vn/gioi-thieu/danh-cho-dao-tao.md",
+      "outcome": "Education use-case documented; no entitled daily VN30TRI file acquired"
+    },
+    {
+      "provider": "Official export instructions",
+      "url": "https://www.tradingview.com/support/solutions/43000537255-how-to-export-chart-data/",
+      "outcome": "CSV contains loaded chart history; complete date coverage must be checked"
+    }
+  ],
+  "raw_daily_rows_downloaded": 0,
+  "D01": "PENDING_SOURCE",
+  "D02": "PENDING_SOURCE",
+  "D04": "PENDING_D01_D02",
+  "purchases_or_vendor_messages_sent": false
+}

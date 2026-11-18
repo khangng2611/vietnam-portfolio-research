@@ -2,7 +2,7 @@
 
 This research package studies representative equity selection followed by capital allocation for Vietnamese long-only portfolios. Five dated correlation representatives from a static 30-stock basket are combined with a GOLD valuation proxy and VFF bond-fund NAV proxy. B1 uses a Black–Litterman equilibrium prior. B2 adds saved XGBoost views. C1 uses VFF 30% and equal shares of the remaining 70% across the other six instruments.
 
-Version `0.1.0` packages the accepted research code and derived evidence. Author: **Khang Phuc Nguyen**. Original project software is available under the MIT license; [NOTICE.md](NOTICE.md) explains the separate data scope. The upstream development project is [portfolio-optimization](https://github.com/khangng2611/portfolio-optimization).
+Version `0.1.1` packages the accepted research code and derived evidence. Author: **Nguyen Phuc Khang**. Original project software is available under the MIT license; [NOTICE.md](NOTICE.md) explains the separate data scope. The upstream development project is [portfolio-optimization](https://github.com/khangng2611/portfolio-optimization).
 
 ## Main observed OOS results
 
@@ -62,6 +62,6 @@ Equity adjusted closes are retrospective provider snapshots. GOLD and VFF remain
 
 Use the versioned release rather than the moving default branch:
 
-> Nguyen, Khang Phuc (2026). *Vietnam Long-Only Multi-Asset Portfolio — Research Code and Derived Results* (Version 0.1.0) [Software]. GitHub. https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.1.0
+> Khang, Nguyen Phuc (2026). *Vietnam Long-Only Multi-Asset Portfolio — Research Code and Derived Results* (Version 0.1.1) [Software]. GitHub. https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.1.1
 
 Machine-readable metadata are in [CITATION.cff](CITATION.cff). No DOI has been assigned. The original local author-review tag `v0.1.0-rc1` remains unchanged.

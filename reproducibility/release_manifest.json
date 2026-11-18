@@ -1,11 +1,11 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "date": "2026-11-18",
   "state": "public research release",
-  "author": "Khang Phuc Nguyen",
+  "author": "Nguyen Phuc Khang",
   "software_license": "MIT",
   "repository_url": "https://github.com/khangng2611/vietnam-portfolio-research",
-  "version_url": "https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.1.0",
+  "version_url": "https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.1.1",
   "raw_vendor_prices_included": false,
   "manifest_self_hash_excluded": true,
   "files": [
@@ -16,17 +16,17 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "deeb50dd2171b1d7418d9c6f3fe3a1b068ad42826690a73ab23abadfde767eb9",
-      "bytes": 1209
+      "sha256": "5e6564be0a0a68d812f1bad479b1076c7be2ad899192bc8161c711c7bc67b1cf",
+      "bytes": 1485
     },
     {
       "path": "CITATION.cff",
-      "sha256": "1ec39bd3c14a775403ab45c405d16ca975852718b824a313a989f76864e49c1c",
+      "sha256": "e359fff749d6cce0322bde3041a4072079212fcc4ea0b1654f47af995fe67062",
       "bytes": 855
     },
     {
       "path": "LICENSE",
-      "sha256": "c263d1b105989241677dcdf8082d031ccb110198313426d65f8e83d2121414c8",
+      "sha256": "0eb04ae6526a363e9bf1b8b43136b7763cf8fe3137129c6eae5e15f2e4aef3b1",
       "bytes": 1074
     },
     {
@@ -36,7 +36,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "2976e9c294bb914c1e4f88deda6edd661f324f1d81b65c6a74d01b6a9594c833",
+      "sha256": "f315426927e8e55a20d0b49b92a46015989941f7825bf93cf59797024c611c54",
       "bytes": 5283
     },
     {
@@ -281,12 +281,12 @@
     },
     {
       "path": "docs/data_dictionary.md",
-      "sha256": "815921ad034244fc6f7e83ebc078e345d5b1c85158654afba43ba704302ee575",
+      "sha256": "9fcd632fc842d75b49047c744ba0cbb9a639d976c80224fea2bbcafdccc7bfe8",
       "bytes": 5400
     },
     {
       "path": "docs/deliverables.csv",
-      "sha256": "fa7a7ebb9ba91c1ad062b6d2b7deeeb88f0c32a2022d8ceda0256764ff3674c8",
+      "sha256": "60b136de9b5075c25bb5602ee6fbd9435e33d5e9d18419daee70b3482531c7fc",
       "bytes": 1100
     },
     {
@@ -296,12 +296,12 @@
     },
     {
       "path": "docs/paper_handoff_vi.md",
-      "sha256": "bbb9e8a3f0de947f3b703e56e12f8474e1bb8931dbf07e70281422150883f467",
+      "sha256": "2369cd6e5283b92038ceb0607f7a0a89ce01a7f7ce8b467a418bfb03498a7ce5",
       "bytes": 10292
     },
     {
       "path": "docs/release_review.md",
-      "sha256": "0afb6bb774ac4344f7a5311e924b30b50e34baeed8626b20e67ec752ab4c347b",
+      "sha256": "68039ea0a25bc7837c6461412e784bf84bc4cf1de7c72f497079732746863e0c",
       "bytes": 1113
     },
     {
@@ -451,7 +451,7 @@
     },
     {
       "path": "reproducibility/write_handoff.py",
-      "sha256": "542ea34f99e685c7310bf4c04c2bdac071a344673454878044978075e171bc0c",
+      "sha256": "b2954f97e67c2011f14fa8d63ad8acf8eab97411730e1a49a83d7bb7532c4faa",
       "bytes": 10569
     },
     {

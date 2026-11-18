@@ -1,8 +1,13 @@
 # Changes
 
+## 0.1.1 — 2026-11-18
+
+- Correct the author citation to **Khang, Nguyen Phuc** and display name Nguyen Phuc Khang at the author’s request.
+- Update CITATION.cff, license attribution and documentation consistently; preserve all research results and previous version tags.
+
 ## 0.1.0 — 2026-11-18
 
-- Publish the first public research version with the confirmed author Khang Phuc Nguyen and MIT software license.
+- Publish the first public research version with the confirmed author Nguyen Phuc Khang and MIT software license.
 - Add versioned citation metadata and separate software/data scope in NOTICE.md.
 - Record Vnstock 6.0.1 runtime attempts: all four history sources require credentials; D01/D02/D04 remain pending.
 - Preserve accepted numerical results and the original v0.1.0-rc1 tag.

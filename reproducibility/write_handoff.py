@@ -84,11 +84,11 @@ code/reproduce.py là entry point tái tạo bảng/hình cho người đọc t�
 
 ## 7. D10/D12 — Release và citation
 
-Tác giả đã xác nhận tên **Khang Phuc Nguyen** và chọn **MIT** cho mã nguồn do nhóm sở hữu ngày 18/11/2026. Bản v0.1.0 được chuẩn bị tại repository nghiên cứu riêng. Trạng thái phát hành được ghi trong docs/release_review.md và docs/deliverables.csv; CITATION.cff ghi metadata trích dẫn.
+Tác giả đã xác nhận tên **Nguyen Phuc Khang** và chọn **MIT** cho mã nguồn do nhóm sở hữu ngày 18/11/2026. Bản v0.1.1 được chuẩn bị tại repository nghiên cứu riêng. Trạng thái phát hành được ghi trong docs/release_review.md và docs/deliverables.csv; CITATION.cff ghi metadata trích dẫn.
 
-Đường dẫn phiên bản: https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.1.0
+Đường dẫn phiên bản: https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.1.1
 
-> Nguyen, Khang Phuc (2026). Vietnam Long-Only Multi-Asset Portfolio — Research Code and Derived Results (Version 0.1.0) [Software]. GitHub.
+> Khang, Nguyen Phuc (2026). Vietnam Long-Only Multi-Asset Portfolio — Research Code and Derived Results (Version 0.1.1) [Software]. GitHub.
 
 Đề xuất Data/Code Availability:
 

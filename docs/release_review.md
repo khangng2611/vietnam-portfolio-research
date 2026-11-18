@@ -1,12 +1,12 @@
-# Research release 0.1.0
+# Research release 0.1.1
 
 Release date: 2026-11-18. D10: public repository and versioned software release.
 
-The user requested publication of this dedicated research repository and confirmed the author name **Khang Phuc Nguyen** and **MIT** for original project software on 2026-11-18. Raw vendor prices, private input ledgers, secrets and fitted objects are excluded. NOTICE.md distinguishes software licensing from source-data rights. Vendor datasets are not described as open data.
+The user requested publication of this dedicated research repository and confirmed the author name **Nguyen Phuc Khang** and **MIT** for original project software on 2026-11-18. Raw vendor prices, private input ledgers, secrets and fitted objects are excluded. NOTICE.md distinguishes software licensing from source-data rights. Vendor datasets are not described as open data.
 
 Repository: https://github.com/khangng2611/vietnam-portfolio-research
 
-Version: v0.1.0. Citation URL: https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.1.0
+Version: v0.1.0. Citation URL: https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.1.1
 
 The original local author-review tag v0.1.0-rc1 is preserved. CITATION.cff supplies the confirmed author, version, release date and version URL. No DOI has been assigned.
 

@@ -1,0 +1,44 @@
+{
+  "market_state_label_changes": 0,
+  "full_sample_coverage": {
+    "reported": [
+      {
+        "phase": "IS",
+        "expected_returns": 906,
+        "matched_returns": 906,
+        "longest_common_returns": 906,
+        "full_sample": true
+      },
+      {
+        "phase": "OOS",
+        "expected_returns": 641,
+        "matched_returns": 641,
+        "longest_common_returns": 641,
+        "full_sample": true
+      }
+    ],
+    "three_day_sensitivity": [
+      {
+        "phase": "IS",
+        "expected_returns": 906,
+        "matched_returns": 906,
+        "longest_common_returns": 906,
+        "full_sample": true
+      },
+      {
+        "phase": "OOS",
+        "expected_returns": 641,
+        "matched_returns": 641,
+        "longest_common_returns": 641,
+        "full_sample": true
+      }
+    ]
+  },
+  "unit_tests_passed": 9,
+  "portfolio_metric_cross_checks": 6,
+  "primary_series": "Dragon Capital VN30TR Index as reported",
+  "source_notes": "Provider snapshot; three flat sessions retained in primary case",
+  "scope": "Computed private; code/coverage only in public release",
+  "source_request_sha256": "1009ec0198dc340f715704edca7b3cc75ea9d7d1f9db26d280e69605e173324e",
+  "source_response_sha256": "9c247b6c7cb2135c31b7c8793c708e5676120d0508f91fc91cd758693d5c3226"
+}

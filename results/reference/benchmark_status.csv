@@ -1,3 +1,3 @@
-item,phase,identifier,status,anchor,expected_return_count,expected_level_count,accepted_level_rows,matched_returns,final_nav,CAGR,sharpe,reason
-D02,IS,VN30TRI,PENDING_SOURCE,2020-02-18,906,907,0,0,,,,No admitted daily total-return file with research-use evidence
-D01,OOS,VN30TRI,PENDING_SOURCE,2023-09-29,641,642,0,0,,,,No admitted daily total-return file with research-use evidence
+item,phase,identifier,status,anchor,expected_return_count,expected_level_count,accepted_level_rows,matched_returns,final_nav,CAGR,sharpe,reason,computed_private_level_rows
+D02,IS,VN30TRI,COMPLETE_PRIVATE_EVIDENCE,2020-02-18,906,907,0,906,,,,Private provider-reported series evaluated; public data admission/sharing rights unconfirmed; see docs/VN30TRI_completion_20261118_vi.md,907
+D01,OOS,VN30TRI,COMPLETE_PRIVATE_EVIDENCE,2023-09-29,641,642,0,641,,,,Private provider-reported series evaluated; public data admission/sharing rights unconfirmed; see docs/VN30TRI_completion_20261118_vi.md,642

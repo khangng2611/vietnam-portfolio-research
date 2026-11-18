@@ -1,13 +1,9 @@
-# Research release 0.1.1
+# Research release 0.2.0
 
-Release date: 2026-11-18. D10: public repository and versioned software release.
+Date: 2026-11-18. Repository: https://github.com/khangng2611/vietnam-portfolio-research
 
-The user requested publication of this dedicated research repository and confirmed the author name **Nguyen Phuc Khang** and **MIT** for original project software on 2026-11-18. Raw vendor prices, private input ledgers, secrets and fitted objects are excluded. NOTICE.md distinguishes software licensing from source-data rights. Vendor datasets are not described as open data.
+Version: https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.2.0
 
-Repository: https://github.com/khangng2611/vietnam-portfolio-research
+Author Nguyen Phuc Khang; citation Khang, Nguyen Phuc. Original software MIT. D01/D02/D04 have been computed on full aligned samples and delivered privately. This code release adds benchmark methodology, parser/sensitivity tests and coverage documentation while preserving accepted portfolio results. Raw/derived benchmark histories, new benchmark tables/figures and the full private report are excluded. See data_sharing_review.md.
 
-Version: v0.1.0. Citation URL: https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.1.1
-
-The original local author-review tag v0.1.0-rc1 is preserved. CITATION.cff supplies the confirmed author, version, release date and version URL. No DOI has been assigned.
-
-D01/D02 VN30TRI and dependent D04 remain pending. The frozen version tree is https://github.com/khangng2611/vietnam-portfolio-research/tree/v0.1.0. D10 completion concerns the public repository and version link; it does not imply completion of the pending VN30TRI analyses.
+This curated tree is based on the existing public v0.1.1 commit. The private working-branch commits and their full report contents are not parents of this public snapshot. Existing version tags remain immutable. No DOI has been assigned. The public code release does not represent third-party permission to distribute datasets, manuscript integration, or advisor approval.

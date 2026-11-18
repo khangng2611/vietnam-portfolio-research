@@ -1,0 +1,91 @@
+{
+  "checked_at": "2026-11-18T10:09:21.442571+00:00",
+  "status": "NO_ADMITTED_VN30TRI_SERIES",
+  "request": "Test user-supplied vnstock Quote/VCI pattern for VN30TRI",
+  "vnstock_version": "4.0.4",
+  "requested_window": {
+    "start": "2020-01-01",
+    "end": "2026-04-29",
+    "interval": "1d"
+  },
+  "quote_attempts": [
+    {
+      "symbol": "VN30TRI",
+      "source": "VCI",
+      "started_at": "2026-11-18T10:07:34.446729+00:00",
+      "status": "error",
+      "error_type": "ValueError",
+      "message": "Invalid derivative or bond symbol. Symbol must be in format of VN30F1M, VN30F2024, GB10F2024, or for company bonds, e.g., BAB122032",
+      "completed_at": "2026-11-18T10:07:36.666714+00:00"
+    },
+    {
+      "symbol": "VN30",
+      "source": "VCI",
+      "started_at": "2026-11-18T10:07:36.667807+00:00",
+      "resolved_source": "VCI",
+      "status": "returned",
+      "rows": 1653,
+      "columns": [
+        "time",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "first": "2019-09-16 00:00:00",
+      "last": "2026-04-29 00:00:00",
+      "duplicate_times": 0,
+      "raw_file": "private_inputs/vci-quote-20261118T100717Z/VN30_VCI.csv",
+      "completed_at": "2026-11-18T10:07:38.487768+00:00"
+    }
+  ],
+  "direct_exact_symbol_attempt": {
+    "status": "completed",
+    "started_at": "2026-11-18T10:08:25.196131+00:00",
+    "url": "https://trading.vietcap.com.vn/api/chart/OHLCChart/gap-chart",
+    "method": "POST",
+    "payload": {
+      "timeFrame": "ONE_DAY",
+      "symbols": [
+        "VN30TRI"
+      ],
+      "to": 1777507200,
+      "countBack": 1800
+    },
+    "reason": "Check backend exact symbol after Quote constructor rejects VN30TRI; no SDK files modified",
+    "requests_version": "2.32.3",
+    "http_status": 200,
+    "raw_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "raw_bytes": 2,
+    "response_type": "list",
+    "items": 0,
+    "item_fields": [],
+    "close_counts": [],
+    "completed_at": "2026-11-18T10:08:25.411976+00:00"
+  },
+  "VN30_price_control": {
+    "raw_rows": 1653,
+    "rows_inside_requested_window": 1576,
+    "first_inside": "2020-01-02",
+    "last_inside": "2026-04-29",
+    "raw_file_sha256": "0fabbbb1274cc4c5401b04bf5c2f60597fddcc037ffe5910a0d85d6df7ad7341",
+    "eligible_for_VN30TRI_benchmark": false,
+    "note": "Legacy library returned 77 earlier rows outside requested window; raw file kept private."
+  },
+  "source_checks": {
+    "VN30TRI_in_VCI_static_index_mapping": false,
+    "VN30TRI_direct_response": []
+  },
+  "raw_VN30TRI_rows_downloaded": 0,
+  "D01": "PENDING_SOURCE",
+  "D02": "PENDING_SOURCE",
+  "D04": "PENDING_D01_D02",
+  "benchmark_experiments_run": false,
+  "interpretation": "Quote VCI retrieves VN30 price index. VN30TRI is rejected by the legacy symbol parser; a direct exact-symbol request to the same VCI endpoint returns HTTP200 and an empty list. Other aliases or vendor entitlements are not established by this check.",
+  "evidence_files": {
+    "reproducibility/artifacts/vci-quote-20261118T100717Z/direct_request.json": "79edac998c312dc134b4b374fbbe90e709d27dcdbaace7175bbd64251485bd4a",
+    "reproducibility/artifacts/vci-quote-20261118T100717Z/manifest.json": "d4d1922772e606fb987cf710b746362610a067397c9d2caec40a1968eadf0c31",
+    "reproducibility/artifacts/vci-quote-20261118T100717Z/quote_probe.py": "14268da7c75c8e2c363d2573da2266ad65bebd3c0a97418acba70b8ec3e8a0cc"
+  }
+}

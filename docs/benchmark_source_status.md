@@ -1,6 +1,8 @@
 # VN30TRI source and coverage status
 
-Reviewed 2026-11-18. D01(OOS), D02(IS) remain PENDING_SOURCE and dependent D04 remains PENDING_D01_D02. No daily VN30TRI level file has been admitted. The expected anchors are2020-02-18 for 906 IS returns and 2023-09-29 for 641 OOS returns. There are 0 admitted index observations. The calendar file enumerates planned portfolio dates and does not assert that market data are absent on those dates.
+Latest update, 2026-11-18: full 906/641 private calculations are now available from Dragon Capital’s publicly displayed VN30TR Index, with a separately documented three-session reconstruction sensitivity. See [completion findings](VN30TRI_completion_20261118_vi.md). Raw-series and derived-data redistribution rights have not been established; zero observations have been admitted to the public data payload. The earlier access checks below are retained as history.
+
+Earlier review on 2026-11-18: D01(OOS), D02(IS) were PENDING_SOURCE and D04 was PENDING_D01_D02. No daily VN30TRI level file has been admitted. The expected anchors are2020-02-18 for 906 IS returns and 2023-09-29 for 641 OOS returns. There are 0 admitted index observations. The calendar file enumerates planned portfolio dates and does not assert that market data are absent on those dates.
 
 ## Latest Vnstock runtime check, 2026-11-18
 
@@ -24,10 +26,10 @@ FiinQuant's historical-data documentation specifies authenticated Fetch_Trading_
 
 Previous C2 source findings also identified CEIC's displayed monthly VN30 total-return dataset. That retrieved monthly series cannot supply daily IS/OOS intervals. Public search results for CafeF VNINDEX and Investing VN30 describe price-index routes. They are outside D01/D02's specified total-return identity. [CEIC monthly series](https://www.ceicdata.com/en/vietnam/ho-chi-minh-stock-exchange-monthly/ho-chi-minh-stock-exchange-index-total-return-vn30).
 
-## Input needed to finish
+## Earlier input requirements (superseded by the private calculation above)
 
 Obtain a lawful HOSE VN30TRI daily EOD level file including both anchors and all 1547 return intervals, plus canonical identifier, source/provider URL, retrieval time, dividend methodology, historical coverage, version/backfill information and research-use evidence. Retain vendor-record dates if provided. Confirm raw and derived redistribution rights separately. The input can remain private.
 
 `code/benchmark.py` is prepared and tested on explicitly synthetic temporary fixtures. It computes full641/906 windows when covered, reports unmatched intervals, and recomputes all portfolios on a shorter contiguous common sample when necessary. A date gap is never bridged into a single-session return. It exports continuous-peak D04 labels only when both complete phases are covered. Benchmark metrics and states have not been computed on live VN30TRI observations.
 
-The current coverage/status tables are `results/reference/benchmark_status.csv`, `benchmark_expected_calendar.csv` and `market_state_status.csv`. Market-state summary cells remain unavailable until admitted index data arrive. No market-outperformance claim follows from this release candidate.
+At that earlier stage, coverage/status were recorded in `results/reference/benchmark_status.csv`, `benchmark_expected_calendar.csv` and `market_state_status.csv`, with no computed market-state summaries. The status tables now distinguish computed private observations from zero publicly admitted observations. The consolidated [handoff](paper_handoff_vi.md) includes the completed D01/D02/D04 results and remaining publication tasks. No general market-outperformance claim follows from these descriptive comparisons.

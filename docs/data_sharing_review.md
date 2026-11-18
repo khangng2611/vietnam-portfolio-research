@@ -1,0 +1,7 @@
+# Source conditions and public scope
+
+Reviewed 18 November 2026. The [Dragon Capital fund page](https://www.dragoncapital.com.vn/institution/vi/product/a0eJ2000001X9zhIAC/vn30) identifies VN30 TRI as its benchmark. Its [terms](https://www.dragoncapital.com.vn/terms) assert ownership, condition commercial use on written consent, and disclaim accuracy/completeness/timeliness warranties. No open-data redistribution license was identified on that page. This records the source conditions; it is not a provider authorization or a legal determination.
+
+Release v0.2.0 therefore distributes benchmark evaluation code, methodology, source/coverage metadata and the previously released portfolio evidence. It does not distribute newly acquired VN30TRI levels, returns, market-state sequences, benchmark performance tables or figures. Those outputs remain in the private author/advisor handoff. Anonymous website availability is not presented as a data license, and the MIT software license grants no third-party data rights.
+
+The primary private analysis retains provider-reported levels. A separate three-session sensitivity assumes no dividend yield during the observed flat interval and is not an official correction. A latest-point cross-check does not validate all historical revisions. Researchers need appropriately obtained inputs for independent benchmark reproduction. Public data admission remains zero; computed-private coverage is recorded separately.

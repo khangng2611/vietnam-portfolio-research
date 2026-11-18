@@ -1,5 +1,7 @@
 # Yêu cầu dữ liệu để hoàn tất D01, D02 và D04
 
+Bổ sung sau các lần kiểm tra dưới đây: đã lấy được chuỗi VN30TR Index công khai từ Dragon Capital và hoàn tất tính toán riêng 906/641 return cùng D04. Xem [kết quả mới](VN30TRI_completion_20261118_vi.md). Nội dung xin dữ liệu phía dưới được giữ như hồ sơ trước khi tìm được nguồn; quyền tái phân phối nguồn mới vẫn chưa xác lập.
+
 Cập nhật 18/11/2026. Chưa nhận được chuỗi daily VN30TRI đủ điều kiện để chạy các phân tích. Đã chạy thử Vnstock mới nhất, ngoài kiểm tra chức năng xuất TradingView và các nguồn trước đó.
 
 ## Kiểm tra Vnstock mới nhất

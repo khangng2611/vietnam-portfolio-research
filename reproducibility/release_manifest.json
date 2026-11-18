@@ -1,12 +1,13 @@
 {
-  "version": "0.1.1",
+  "version": "0.2.0",
   "date": "2026-11-18",
-  "state": "public research release",
+  "state": "public code and portfolio-results release",
   "author": "Nguyen Phuc Khang",
   "software_license": "MIT",
   "repository_url": "https://github.com/khangng2611/vietnam-portfolio-research",
-  "version_url": "https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.1.1",
+  "version_url": "https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.2.0",
   "raw_vendor_prices_included": false,
+  "new_benchmark_evidence_included": false,
   "manifest_self_hash_excluded": true,
   "files": [
     {
@@ -16,12 +17,12 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "5e6564be0a0a68d812f1bad479b1076c7be2ad899192bc8161c711c7bc67b1cf",
-      "bytes": 1485
+      "sha256": "27cf5f6019f145f3edb32370e0d35ff8da42443c6316c575388291a15106998e",
+      "bytes": 1893
     },
     {
       "path": "CITATION.cff",
-      "sha256": "e359fff749d6cce0322bde3041a4072079212fcc4ea0b1654f47af995fe67062",
+      "sha256": "444c6937244a53f796f8cac585851cb0f5ff6e47cc5d7e1915f123c14fce2a3f",
       "bytes": 855
     },
     {
@@ -36,8 +37,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "f315426927e8e55a20d0b49b92a46015989941f7825bf93cf59797024c611c54",
-      "bytes": 5283
+      "sha256": "c83325711a3376dc270a4b9058f5c7fa1d1ab7eba80997575c51ddb2bb3e2d48",
+      "bytes": 6091
     },
     {
       "path": "code/accounting.py",
@@ -46,8 +47,8 @@
     },
     {
       "path": "code/benchmark.py",
-      "sha256": "3a53662170b3066091f5bcc248751a08c01756c5fcb24c37b3d293c8293ec880",
-      "bytes": 6461
+      "sha256": "78a055dddf6958e2b228fabf60aa92d718bf1eab7d330ac1a3e091eb2c9b9697",
+      "bytes": 6680
     },
     {
       "path": "code/fixed_rule.py",
@@ -265,19 +266,34 @@
       "bytes": 16270
     },
     {
+      "path": "docs/VN30TRI_Quote_VCI_check_vi.md",
+      "sha256": "19f273ddbf94b61549165b18ddf4ef80ef57877c16b1a84b2afdd2c4bc102b90",
+      "bytes": 2865
+    },
+    {
       "path": "docs/VN30TRI_access_request_vi.md",
-      "sha256": "3420cb521146e8ec4cd9c16f8de98e8b233a352d56fe1951c987e8e871742e2f",
-      "bytes": 7664
+      "sha256": "d6c4db958d394b4e9c2fb999f90a951e50478e53853ba84e8ebe114ff43f1163",
+      "bytes": 8079
     },
     {
       "path": "docs/VN30TRI_api_options_vi.md",
-      "sha256": "dde752fb71eed7dc002ba30a2486354b5e03f5028a82fbb09695768e0a12bf83",
-      "bytes": 7026
+      "sha256": "49c08643613594c1c6c7c89aa9c4575f1d32237ed51f6b5c8b102ada14c4a012",
+      "bytes": 7432
+    },
+    {
+      "path": "docs/VN30TRI_completion_20261118_vi.md",
+      "sha256": "3ee908fff236d4ad5cc07876f7ebdbe09ae7359b4a2df79395636ee19b3c32e2",
+      "bytes": 702
+    },
+    {
+      "path": "docs/VN30_total_return_reconstruction_vi.md",
+      "sha256": "2538e5ca0888406ee1f26f60a92ab6a315c3941f4e7ffdf94caa4d4d46efad1f",
+      "bytes": 4545
     },
     {
       "path": "docs/benchmark_source_status.md",
-      "sha256": "d7f3564a6ab35fed0c92382bc912a6aa6a3bb9901cee2e683fc492e70ec73ad3",
-      "bytes": 5863
+      "sha256": "5436480d088d1559d2c4e95d669e23ad85b09778bc0c5dc167fc9a66bce0ec66",
+      "bytes": 6598
     },
     {
       "path": "docs/data_dictionary.md",
@@ -285,9 +301,14 @@
       "bytes": 5400
     },
     {
+      "path": "docs/data_sharing_review.md",
+      "sha256": "8dfa67344e91d6e972108489570b99f995edb239058d4181d69230e8cc008586",
+      "bytes": 1460
+    },
+    {
       "path": "docs/deliverables.csv",
-      "sha256": "60b136de9b5075c25bb5602ee6fbd9435e33d5e9d18419daee70b3482531c7fc",
-      "bytes": 1100
+      "sha256": "61209a80c786237b42361c6b76d6d6c5fdb227483c8b9d20e6893539d898fd07",
+      "bytes": 1350
     },
     {
       "path": "docs/methodology.md",
@@ -296,23 +317,28 @@
     },
     {
       "path": "docs/paper_handoff_vi.md",
-      "sha256": "2369cd6e5283b92038ceb0607f7a0a89ce01a7f7ce8b467a418bfb03498a7ce5",
-      "bytes": 10292
+      "sha256": "9c8952c1f2a4bda5e33f823a54b5cca0c8b11af6ab73dec7162a973b75c24858",
+      "bytes": 2764
     },
     {
       "path": "docs/release_review.md",
-      "sha256": "68039ea0a25bc7837c6461412e784bf84bc4cf1de7c72f497079732746863e0c",
-      "bytes": 1113
+      "sha256": "714e294fec5ee7d60b60cb64cc865a5274f4731899c5e01b8906e55030c6d1c8",
+      "bytes": 1010
     },
     {
       "path": "docs/reproducibility.md",
-      "sha256": "ecab62d37c11f1d7884d90b6c555b716cbdbfd72a7456c2fb5dbfbb513564c27",
-      "bytes": 3957
+      "sha256": "bb5a0b991185fd6f85ca437cb2b8b6324a3bebb7037fed6ec273ddeefefab0d3",
+      "bytes": 4331
     },
     {
       "path": "docs/results_guide.md",
-      "sha256": "7dae739d276c462ebcc5691d8ce401a77205d48a81678683b16713471e0d10b5",
-      "bytes": 2448
+      "sha256": "ce69d578725b09b0f7802d68283cee48e06666db4e7aeea61e7a7334fc488b7d",
+      "bytes": 1275
+    },
+    {
+      "path": "docs/submission_decisions_vi.md",
+      "sha256": "0c42f3845fb7541360dab358f4a7116606aee398c05cdca0a9cd72ec9459fde5",
+      "bytes": 4112
     },
     {
       "path": "figures/C1_OOS_wealth.pdf",
@@ -415,6 +441,11 @@
       "bytes": 1247
     },
     {
+      "path": "reproducibility/run_dragon_benchmark.py",
+      "sha256": "e5c39b655ff78ad8cc90a9551cf77bb8afccafc548cb9e7210f1720541040bd9",
+      "bytes": 8889
+    },
+    {
       "path": "reproducibility/run_record.json",
       "sha256": "67e50bc167aa2f92e4555e36ca7ba4ab9013570fe4519636274f054620df9f2a",
       "bytes": 1225
@@ -430,14 +461,24 @@
       "bytes": 3048
     },
     {
+      "path": "reproducibility/test_dragon_benchmark.py",
+      "sha256": "af16ced92fe5d0c9e7b24e1b5c2a75efc1f25998f46455c59c71d6e5a9eb4396",
+      "bytes": 2515
+    },
+    {
       "path": "reproducibility/verification.json",
-      "sha256": "5f894b02321da11eb522a47e1d8a2a17d1d78cc9b0e4f7e62496d2daa957c3dd",
-      "bytes": 400
+      "sha256": "dcb312e658a4d963aab67e5f5bf61c1aacaf3dc5cb2b6250812f23d896fe6e7f",
+      "bytes": 432
     },
     {
       "path": "reproducibility/verify_release.py",
-      "sha256": "a86c76a499d3b7cfd9d32cf423bf7ef8fee061f51209b6a30801eb0a0a5c72bc",
-      "bytes": 3402
+      "sha256": "a7388666240e86dd221cf052fac06b9f501ead2a3263325265ebe47a1fbfa34d",
+      "bytes": 3459
+    },
+    {
+      "path": "reproducibility/vn30_reconstruction_feasibility_20261118.json",
+      "sha256": "38e695626b7b634be003c0505ef26a20398221363f16d6ae7113da8773152175",
+      "bytes": 1733
     },
     {
       "path": "reproducibility/vn30tri_acquisition_20261112.json",
@@ -450,9 +491,24 @@
       "bytes": 3824
     },
     {
+      "path": "reproducibility/vn30tri_completion_20261118.json",
+      "sha256": "3758d9ba2f00104411252ec51c05ec79bfc800638031cbdd815c85f2551037c2",
+      "bytes": 1293
+    },
+    {
+      "path": "reproducibility/vn30tri_vci_quote_20261118.json",
+      "sha256": "99c1c59af431be998c1ca0209434a6d95b5960b108447983dc28320f6717672b",
+      "bytes": 3454
+    },
+    {
+      "path": "reproducibility/write_benchmark_report.py",
+      "sha256": "3e2c55f73d425525b7bb846f5624675b13af6ba16bdf24b0b39936f56a42ce51",
+      "bytes": 13571
+    },
+    {
       "path": "reproducibility/write_handoff.py",
-      "sha256": "b2954f97e67c2011f14fa8d63ad8acf8eab97411730e1a49a83d7bb7532c4faa",
-      "bytes": 10569
+      "sha256": "1f617d0aa02db2bf7081d4b657e5d8d2c73f466c7cd17c13b5f2d64e234bc4c5",
+      "bytes": 20880
     },
     {
       "path": "requirements.txt",
@@ -591,8 +647,8 @@
     },
     {
       "path": "results/reference/benchmark_status.csv",
-      "sha256": "37edc8b756167ed2d35b9d8c9e623a4d32612815d4c15a8a7bccd508c8cf3d94",
-      "bytes": 383
+      "sha256": "ad7d542e90d314bbef1e2f714e5934417b24fe4edb31b171e08938935d86f137",
+      "bytes": 593
     },
     {
       "path": "results/reference/class_contributions.csv",
@@ -626,8 +682,8 @@
     },
     {
       "path": "results/reference/market_state_status.csv",
-      "sha256": "c0dac089a3818fbf5cd1d5ccaf0b2e71fa9f2ce95190496070397a31fb0a8f18",
-      "bytes": 147
+      "sha256": "79c01cf3c2ae1d25a5dcd4abe9280386c642f6d8e4fb1899f20e5818172d2492",
+      "bytes": 286
     },
     {
       "path": "results/reference/market_states.csv",

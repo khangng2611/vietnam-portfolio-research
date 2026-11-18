@@ -35,6 +35,55 @@ def longest_block(valid):
     return max(runs, key=len) if runs else valid.index[:0]
 
 
+def evaluate_levels(levels, daily, output, benchmark_name="VN30TRI"):
+    """Compute aligned summaries; callers document access and publication scope."""
+    panel = daily.pivot(index='date', columns='strategy', values='gross_return')
+    aligned, index_levels = align_levels(levels, panel.index)
+    metrics, coverage = [], []
+    for phase, (start, end, expected) in PHASES.items():
+        dates = panel.loc[start:end].index
+        eligible = aligned.loc[dates[1:]].notna()
+        used = longest_block(eligible)
+        full = len(used) == expected
+        coverage.append({'phase': phase, 'expected_returns': expected, 'matched_returns': int(eligible.sum()),
+                         'longest_common_returns': len(used), 'full_sample': full})
+        if len(used) < 2:
+            continue
+        sample = pd.DataFrame({benchmark_name: aligned.loc[used], **{s: panel.loc[used, s] for s in STRATEGIES}})
+        for name in sample:
+            metrics.append({'phase': phase, 'strategy': name, 'N': len(used),
+                            'first_return': used[0], 'last_return': used[-1],
+                            'sample_kind': 'FULL_SAMPLE' if full else 'COMMON_CONTIGUOUS',
+                            **return_stats(sample[name]), 'turnover': None})
+        anchor = panel.index[panel.index.get_loc(used[0]) - 1]
+        wealth = pd.concat([pd.DataFrame(1., index=[anchor], columns=sample.columns), (1 + sample).cumprod()])
+        ax = wealth.plot(figsize=(8, 3.7), ylabel='Gross wealth (common anchor = 1)')
+        save_figure(ax.figure, output, f'{benchmark_name}_context_{phase}')
+    pd.DataFrame(coverage).to_csv(output / 'coverage.csv', index=False)
+    pd.DataFrame(metrics).to_csv(output / 'metrics.csv', index=False)
+    alignment = pd.DataFrame({'return_date': panel.index, 'index_level_available': index_levels.notna(),
+                              'aligned_return': aligned})
+    alignment.to_csv(output / 'alignment.csv', index=False)
+    if all(row['full_sample'] for row in coverage):
+        market = index_levels.loc['2020-02-18':'2026-04-29']
+        dd = market / market.cummax() - 1
+        states = pd.DataFrame({'date': market.index, 'market_drawdown': dd,
+                               'market_state': np.where(dd <= -.1, 'MARKET_DRAWDOWN_10', 'OTHER_OBSERVED_DAYS')})
+        states.to_csv(output / 'market_states.csv', index=False)
+        rows = []
+        for phase, (start, end, _) in PHASES.items():
+            for label in ['MARKET_DRAWDOWN_10', 'OTHER_OBSERVED_DAYS']:
+                selected = states[(states.date > start) & (states.date <= end) & (states.market_state == label)].date
+                for strategy in STRATEGIES:
+                    returns = panel.loc[selected, strategy]
+                    rows.append({'phase': phase, 'market_state': label, 'strategy': strategy, 'N': len(returns),
+                                 'mean_daily_return': returns.mean(), 'fraction_negative': (returns < 0).mean(),
+                                 'worst_day': returns.min(), 'annualized_volatility': returns.std(ddof=1) * np.sqrt(252),
+                                 'compounded_subset_return': (1 + returns).prod() - 1 if len(returns) else np.nan})
+        pd.DataFrame(rows).to_csv(output / 'market_state_summary.csv', index=False)
+    return coverage
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--levels', type=Path, required=True)
@@ -59,50 +108,7 @@ def main():
     (args.output / 'input_manifest.json').write_text(json.dumps(hashes, indent=2) + '\n')
     levels = pd.read_csv(args.levels)
     daily = pd.read_csv(ROOT / 'results/reference/strategy_daily.csv', parse_dates=['date'])
-    panel = daily.pivot(index='date', columns='strategy', values='gross_return')
-    aligned, index_levels = align_levels(levels, panel.index)
-    metrics, coverage = [], []
-    for phase, (start, end, expected) in PHASES.items():
-        dates = panel.loc[start:end].index
-        eligible = aligned.loc[dates[1:]].notna()
-        used = longest_block(eligible)
-        full = len(used) == expected
-        coverage.append({'phase': phase, 'expected_returns': expected, 'matched_returns': int(eligible.sum()),
-                         'longest_common_returns': len(used), 'full_sample': full})
-        if len(used) < 2:
-            continue
-        sample = pd.DataFrame({'VN30TRI': aligned.loc[used], **{s: panel.loc[used, s] for s in STRATEGIES}})
-        for name in sample:
-            metrics.append({'phase': phase, 'strategy': name, 'N': len(used),
-                            'first_return': used[0], 'last_return': used[-1],
-                            'sample_kind': 'FULL_SAMPLE' if full else 'COMMON_CONTIGUOUS',
-                            **return_stats(sample[name]), 'turnover': None})
-        anchor = panel.index[panel.index.get_loc(used[0]) - 1]
-        wealth = pd.concat([pd.DataFrame(1., index=[anchor], columns=sample.columns), (1 + sample).cumprod()])
-        ax = wealth.plot(figsize=(8, 3.7), ylabel='Gross wealth (common anchor = 1)')
-        save_figure(ax.figure, args.output, f'VN30TRI_context_{phase}')
-    pd.DataFrame(coverage).to_csv(args.output / 'coverage.csv', index=False)
-    pd.DataFrame(metrics).to_csv(args.output / 'metrics.csv', index=False)
-    alignment = pd.DataFrame({'return_date': panel.index, 'index_level_available': index_levels.notna(),
-                              'aligned_return': aligned})
-    alignment.to_csv(args.output / 'alignment.csv', index=False)
-    if all(row['full_sample'] for row in coverage):
-        market = index_levels.loc['2020-02-18':'2026-04-29']
-        dd = market / market.cummax() - 1
-        states = pd.DataFrame({'date': market.index, 'market_drawdown': dd,
-                               'market_state': np.where(dd <= -.1, 'MARKET_DRAWDOWN_10', 'OTHER_OBSERVED_DAYS')})
-        states.to_csv(args.output / 'market_states.csv', index=False)
-        rows = []
-        for phase, (start, end, _) in PHASES.items():
-            for label in ['MARKET_DRAWDOWN_10', 'OTHER_OBSERVED_DAYS']:
-                selected = states[(states.date > start) & (states.date <= end) & (states.market_state == label)].date
-                for strategy in STRATEGIES:
-                    returns = panel.loc[selected, strategy]
-                    rows.append({'phase': phase, 'market_state': label, 'strategy': strategy, 'N': len(returns),
-                                 'mean_daily_return': returns.mean(), 'fraction_negative': (returns < 0).mean(),
-                                 'worst_day': returns.min(), 'annualized_volatility': returns.std(ddof=1) * np.sqrt(252),
-                                 'compounded_subset_return': (1 + returns).prod() - 1 if len(returns) else np.nan})
-        pd.DataFrame(rows).to_csv(args.output / 'market_state_summary.csv', index=False)
+    coverage = evaluate_levels(levels, daily, args.output)
     hashes['status'] = 'completed'
     (args.output / 'input_manifest.json').write_text(json.dumps(hashes, indent=2) + '\n')
     print(json.dumps(coverage))

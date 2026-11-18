@@ -19,7 +19,7 @@ The main command regenerates 24 C1/B1/B2 metric records, 128 A/B strategy-phase-
 
 The three immutable source identities are availability-observed-contract-20261012T233110, core-evidence-20261023T211011 and extensions-C-20261104T210906. Their input/source hashes and source-map are recorded. This release extracts existing results. Historical fitting, price acquisition and original first-publication vintages require authorized inputs. The previous C package had a prose count of48 metrics although its CSV contains 24. The new package reproduces24 and records the packaging correction without changing accepted numeric results.
 
-## VN30TRI when admitted data become available
+## VN30TRI independently obtained inputs
 
 Use a new output folder and provide a lawful daily-level CSV with index_date/index_level. Metadata must contain identifier=VN30TRI, return_type=total_return, currency=VND, provider, source_url, retrieved_at, dividend_method, vintage, rights_evidence and research_use_permitted=true. Vendor-record dates can be retained as additional evidence. Actual source rights must be checked by the authors.
 
@@ -28,3 +28,5 @@ Use a new output folder and provide a lawful daily-level CSV with index_date/ind
 ```
 
 The script handles IS/OOS independently, includes each phase anchor and checks that the index return interval has the same two session endpoints as its portfolio counterpart. Missing and extra source sessions remain visible. Full-sample rows are distinguished from a longest contiguous common sample with all portfolio metrics recomputed there. It exports coverage, alignment and descriptive metrics, and three-path-plus-C1 wealth context. When both phases have full history, it exports continuous-peak market states and state-specific descriptive return statistics. Index turnover remains N/A. No empirical benchmark file has been admitted in this release candidate.
+
+Private full-sample D01/D02/D04 calculations were completed on 18 November 2026. Public admission remains zero because redistribution conditions were not established. Benchmark evaluation code and tests are shared; new empirical benchmark tables/figures and the full report are available only in the author handoff. No source-use metadata flag is fabricated to imply permission.

@@ -2,12 +2,12 @@ cff-version: 1.2.0
 message: "Please cite this versioned research software when using its methodology, code or reported results."
 type: software
 title: "Vietnam Long-Only Multi-Asset Portfolio — Research Code and Derived Results"
-version: 0.1.1
+version: 0.2.0
 date-released: 2026-11-18
 license: MIT
 url: "https://github.com/khangng2611/vietnam-portfolio-research"
 repository-code: "https://github.com/khangng2611/vietnam-portfolio-research"
-repository-artifact: "https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.1.1"
+repository-artifact: "https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.2.0"
 authors:
   - family-names: Khang
     given-names: Nguyen Phuc

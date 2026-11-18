@@ -1,5 +1,11 @@
 # Changes
 
+## 0.2.0 — 2026-11-18
+
+- Add full-sample benchmark evaluation, source normalization and a labeled three-session sensitivity with nine tests.
+- Record completed private D01/D02/D04 evidence and advisor handoff while excluding newly acquired index histories, benchmark tables and figures from public distribution.
+- Preserve accepted C1/B1/B2 and A/B results; clarify source conditions and code/data scope.
+
 ## 0.1.1 — 2026-11-18
 
 - Correct the author citation to **Khang, Nguyen Phuc** and display name Nguyen Phuc Khang at the author’s request.

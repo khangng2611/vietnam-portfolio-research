@@ -1,2 +1,2 @@
-item,status,classification,accepted_market_state_rows,reason
-D04,PENDING_D01_D02,VN30TRI continuous drawdown <= -10%,0,No admitted VN30TRI history
+item,status,classification,accepted_market_state_rows,reason,computed_private_market_state_rows
+D04,COMPUTED_PRIVATE_SOURCE_REVIEW,VN30TRI continuous drawdown <= -10%,0,12 private phase/state/strategy summaries; 1547 return dates plus anchor; public daily-series admission pending,1548

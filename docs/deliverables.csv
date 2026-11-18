@@ -1,13 +1,13 @@
 item,status,description,path
-D01,PENDING_SOURCE,VN30TRI OOS641,results/reference/benchmark_status.csv
-D02,PENDING_SOURCE,VN30TRI IS906,results/reference/benchmark_status.csv
+D01,COMPLETE_PRIVATE_EVIDENCE,Computed private evidence; public method and coverage only,docs/VN30TRI_completion_20261118_vi.md
+D02,COMPLETE_PRIVATE_EVIDENCE,Computed private evidence; public method and coverage only,docs/VN30TRI_completion_20261118_vi.md
 D03,COMPLETE,294 dated portfolio drawdown episodes,results/derived/drawdown_episodes.csv
-D04,PENDING_D01_D02,Objective VN30TRI decline labels,results/reference/market_state_status.csv
+D04,COMPLETE_PRIVATE_EVIDENCE,Computed private evidence; public method and coverage only,docs/VN30TRI_completion_20261118_vi.md
 D05,COMPLETE,Daily class contributions and linked wealth,results/derived/class_contribution_summary.csv
-D06,COMPLETE,"Three manuscript figures plus underwater, PNG/PDF/SVG",figures/
+D06,COMPLETE,Core manuscript figures complete; private IS/OOS benchmark and D04 timeline added,docs/results_guide.md
 D07,COMPLETE,32-series source and units dictionary,data_public/series_dictionary.csv
 D08,COMPLETE,Finalized XGBoost to BL source and timing documentation,docs/methodology.md
 D09,COMPLETE,"Selection, constraints and accounting code/source map",code/
-D10,COMPLETE,"Public research repository and versioned v0.1.1 software citation",docs/release_review.md
+D10,COMPLETE_CITABLE_CODE_RELEASE,Versioned v0.2.0 code release; private benchmark evidence excluded,docs/release_review.md
 D11,COMPLETE,24 main + 128 AB metrics and event turnover reproduced,results/derived/reproduction_summary.json
-D12,COMPLETE_LOCAL_HANDOFF,Vietnamese results/paper integration handoff,docs/paper_handoff_vi.md
+D12,READY_FOR_ADVISOR_SUBMISSION,Consolidated Vietnamese handoff including D01/D02/D04 and remaining publication tasks,docs/paper_handoff_vi.md

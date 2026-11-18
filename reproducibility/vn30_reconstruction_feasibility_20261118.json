@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-11-18T11:21:16.460811+00:00",
+  "status": "PARTIAL_RECONSTRUCTION_INPUTS_ACQUIRED",
+  "target": "Reconstruct daily total return for historical VN30; equivalence to official VN30TRI is unverified",
+  "source": "VCI corporate events, eventCode=DIV",
+  "queries_successful": 30,
+  "query_window": [
+    "20200101",
+    "20260429"
+  ],
+  "first_page_is_last_for_all_symbols": true,
+  "quality_checks": {
+    "rows": 134,
+    "symbols_with_cash_dividends": 26,
+    "first_ex_date": "2020-02-13",
+    "last_ex_date": "2026-04-29",
+    "missing_ex_dates": 0,
+    "missing_amounts": 0,
+    "nonpositive_amounts": 0,
+    "duplicate_symbol_event_ids": 0,
+    "duplicate_symbol_ex_dates": 4
+  },
+  "universe": "Existing fixed 30-stock research basket, not certified historical VN30 membership",
+  "required_missing_inputs": [
+    "Historical VN30 constituents and effective dates over 2020–2026",
+    "Historical index weights, or adjusted index quantities/free-float/capping factors and divisor changes sufficient to reconstruct them",
+    "Verified raw/adjusted constituent price and corporate-action handling",
+    "Independent official VN30TRI observations for validation and source-use permissions"
+  ],
+  "raw_inputs_private": true,
+  "raw_directory": "private_inputs/vn30-reconstruction-20261118T111855Z",
+  "dividend_candidates_sha256": "fb165e6adfb39cdeaf7a9162a2627c6d4725954c467e5c9d53e925c74b194a9a",
+  "source_manifest_sha256": "5154347657ae62145265a3fa7441cf9a71cdf668e6c39bc972dbc6653c77fe3f",
+  "index_series_generated": false,
+  "official_VN30TRI_equivalence_established": false,
+  "benchmark_experiments_run": false,
+  "D01": "PENDING_SOURCE",
+  "D02": "PENDING_SOURCE",
+  "D04": "PENDING_D01_D02"
+}

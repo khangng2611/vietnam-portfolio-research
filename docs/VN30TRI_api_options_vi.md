@@ -1,5 +1,7 @@
 # Đăng ký API để kiểm tra VN30TRI
 
+Cập nhật sau kiểm tra: đã tìm được chuỗi VN30TR Index miễn phí trên website Dragon Capital, không cần bốn API key bên dưới, và hoàn tất tính toán tại máy. Xem [kết quả và giới hạn nguồn](VN30TRI_completion_20261118_vi.md). Các hướng dẫn dưới đây vẫn mô tả những lựa chọn nguồn khác, chưa xác nhận coverage của từng nguồn.
+
 Kiểm tra ngày 18/11/2026. Chưa xác nhận được nguồn nào trong DNSE, FHSC, SSI và TCBS cung cấp **đúng VN30TRI hằng ngày, đủ 18/02/2020–29/04/2026** qua quyền miễn phí. Các lần chạy Vnstock 6.0.1 hiện bị chặn vì thiếu khóa trước khi nhận dữ liệu. Xem reproducibility/vn30tri_acquisition_20261118.json.
 
 ## Nguồn nên thử trước

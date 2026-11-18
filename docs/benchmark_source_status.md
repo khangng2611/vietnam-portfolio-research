@@ -1,6 +1,18 @@
 # VN30TRI source and coverage status
 
-Reviewed 2026-11-11. D01(OOS), D02(IS) and dependent D04 remain PENDING_SOURCE. No daily VN30TRI level file has been admitted. The expected anchors are2020-02-18 for 906 IS returns and 2023-09-29 for 641 OOS returns. There are 0 admitted index observations. The calendar file enumerates planned portfolio dates and does not assert that market data are absent on those dates.
+Reviewed 2026-11-18. D01(OOS), D02(IS) remain PENDING_SOURCE and dependent D04 remains PENDING_D01_D02. No daily VN30TRI level file has been admitted. The expected anchors are2020-02-18 for 906 IS returns and 2023-09-29 for 641 OOS returns. There are 0 admitted index observations. The calendar file enumerates planned portfolio dates and does not assert that market data are absent on those dates.
+
+## Latest Vnstock runtime check, 2026-11-18
+
+Installed the latest available stable Vnstock 6.0.1 with vnstock-oapi 0.1.2 from the official package index into an isolated temporary environment. The original research environment retains Vnstock 4.0.4. Installation completed and pip check reported no broken requirements. The official release history dates 6.0.1 to 2026-11-15. [Release history](https://vnstocks.com/docs/vnstock/lich-su-phien-ban).
+
+Executed `Market(source).index("VN30TRI").ohlcv(start="2020-01-14", end="2026-04-29", interval="1D", floating=None)` for each of the four sources documented for index OHLCV: dnse, fhsc, ssi and tcbs. Every call raised CredentialError with code VNSTOCK_CREDENTIAL_MISSING before retrieving index data. Missing credentials were DNSE_API_KEY/DNSE_API_SECRET, FHSC_API_KEY, SSI_API_KEY/SSI_API_SECRET and TCBS_API_KEY respectively. No index CSV was produced. The runtime record and evidence hashes are in [the acquisition record](../reproducibility/vn30tri_acquisition_20261118.json); installation log, environment and exact probe are retained locally under ignored reproducibility/artifacts/vnstock-probe-20261118/.
+
+This verifies the current access barrier, not whether those vendors carry VN30TRI or cover 2020–2026. Generation 6 uses the user's own Open API credentials. vnstock-oapi is the Community connector; the vnstock normalization layer belongs to the extended software offering. Broker/source access and software licensing are separate prerequisites; neither establishes a right to publish raw or derived data. [Index history API](https://vnstocks.com/docs/vnstock/v6/thi-truong-market), [Generation 6 architecture and access](https://vnstocks.com/docs/vnstock/v6/gioi-thieu).
+
+No benchmark experiment was run. Existing C1/B1/B2 outputs and D01/D02/D04 status tables remain unchanged. An authorized source key configured locally, followed by symbol/coverage/rights checks, or a permitted daily index export is still needed.
+
+## Earlier source findings
 
 The updated official rules supplied in guide_5 are HOSE Ground Rules v4.0, Decision 747/QĐ-SGDHCM dated 2024-12-30. The retrieved document identifies price/total-return variants, the EOD total-return calculation and dividend reinvestment. It also describes revisions/corrections and source intellectual-property terms. Its full methodology is available from HOSE. [Official rules](https://staticfile.hsx.vn/Uploads/LocalFiles/ef15ff11e799483abd11677ad0443887/20250114_20241230_QD%20747%20HOSE%20Index%20Ground%20Rules.pdf).
 

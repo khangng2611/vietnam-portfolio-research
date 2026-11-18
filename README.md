@@ -2,7 +2,7 @@
 
 This research package studies representative equity selection followed by capital allocation for Vietnamese long-only portfolios. Five dated correlation representatives from a static 30-stock basket are combined with a GOLD valuation proxy and VFF bond-fund NAV proxy. B1 uses a Black–Litterman equilibrium prior. B2 adds saved XGBoost views. C1 uses VFF 30% and equal shares of the remaining 70% across the other six instruments.
 
-This is the local `0.1.0-rc1` release candidate prepared for author review under guide_5.md. Public release, full paper authorship and project licensing are pending approval. CITATION.cff records the known contributor provisionally. A verified public version permalink/DOI will be added after actual publication. The upstream development project is [portfolio-optimization](https://github.com/khangng2611/portfolio-optimization).
+Version `0.1.0` packages the accepted research code and derived evidence. Author: **Khang Phuc Nguyen**. Original project software is available under the MIT license; [NOTICE.md](NOTICE.md) explains the separate data scope. The upstream development project is [portfolio-optimization](https://github.com/khangng2611/portfolio-optimization).
 
 ## Main observed OOS results
 
@@ -29,7 +29,7 @@ figures/                  Manuscript PNG/PDF/SVG figures
 data_public/             32-series dictionary, input schema and access instructions
  docs/                    Methodology, source status, result map and Vietnamese paper handoff
 reproducibility/           Tests, extraction recipe, original configuration and source identities
-CITATION.cff              Provisional citation metadata awaiting author/release approval
+CITATION.cff              Author and versioned software citation
 LICENSE                   Current licensing status
 ```
 
@@ -48,16 +48,20 @@ The command regenerates 24 C1/B1/B2 scenario metrics and 128 accepted A/B scenar
 
 ## Twelve guide_5 items
 
-D03 drawdowns, D05 class P&L, D06 figures, D07 dictionary, D08 predictor-to-BL documentation, D09 selection/accounting documentation, D11 consistency reproduction and D12 paper handoff are prepared. D01/D02 VN30TRI data acquisition and dependent D04 market labels remain pending. D10 has a curated, locally versioned candidate and awaits author approval for the public repository/release.
+D03 drawdowns, D05 class P&L, D06 figures, D07 dictionary, D08 predictor-to-BL documentation, D09 selection/accounting documentation, D11 consistency reproduction and D12 paper handoff are prepared. D01/D02 VN30TRI data acquisition and dependent D04 market labels remain pending. D10 publication status and the version URL are recorded in [release_review.md](docs/release_review.md).
 
 [Detailed progress](docs/deliverables.csv), [Vietnamese handoff](docs/paper_handoff_vi.md), [VN30TRI source findings](docs/benchmark_source_status.md).
 
 ## Data and replication scope
 
-The package contains code and derived research outputs for author review. Raw vendor prices, private input ledgers and fitted model objects require authorized access. Public readers can regenerate the distributed summaries/figures and verify class linking from released daily contributions. Recomputing those daily contributions from original asset returns or refitting historical models requires the frozen private inputs. Source-copy hashes distinguish original experimental code from newly organized analysis code.
+The package contains code and derived research outputs. Raw vendor prices, private input ledgers and fitted model objects require authorized access. Readers can regenerate the distributed summaries/figures and verify class linking from released daily contributions. Recomputing those daily contributions from original asset returns or refitting historical models requires the frozen private inputs. Source-copy hashes distinguish original experimental code from newly organized analysis code.
 
-Equity adjusted closes are retrospective provider snapshots. GOLD and VFF remain valuation proxies with assumed availability and next-close marking. Fees of0/10/25/50 bps per traded side are hypothetical. Index source data and dated derived-output sharing rights need author clearance before public distribution.
+Equity adjusted closes are retrospective provider snapshots. GOLD and VFF remain valuation proxies with assumed availability and next-close marking. Fees of0/10/25/50 bps per traded side are hypothetical. The code license does not license vendor data; future index inputs require their own access and sharing conditions.
 
 ## Citation and release
 
-The local candidate is tagged `v0.1.0-rc1`. Before manuscript citation, approve the full author list, license and sharing scope, publish a stable release to an accessible repository, and verify its version permalink. Record a DOI only after an archive service has assigned one. The current upstream development URL identifies the development project, while this candidate's public release link is still pending.
+Use the versioned release rather than the moving default branch:
+
+> Nguyen, Khang Phuc (2026). *Vietnam Long-Only Multi-Asset Portfolio — Research Code and Derived Results* (Version 0.1.0) [Software]. GitHub. https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.1.0
+
+Machine-readable metadata are in [CITATION.cff](CITATION.cff). No DOI has been assigned. The original local author-review tag `v0.1.0-rc1` remains unchanged.

@@ -1,7 +1,13 @@
 {
-  "version": "0.1.0-rc1",
-  "state": "local author-review candidate",
+  "version": "0.1.0",
+  "date": "2026-11-18",
+  "state": "public research release",
+  "author": "Khang Phuc Nguyen",
+  "software_license": "MIT",
+  "repository_url": "https://github.com/khangng2611/vietnam-portfolio-research",
+  "version_url": "https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.1.0",
   "raw_vendor_prices_included": false,
+  "manifest_self_hash_excluded": true,
   "files": [
     {
       "path": ".gitignore",
@@ -10,23 +16,28 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "59236fdf0e1ea8d303082bb745fead35e2be54a63572e17660bd4384995aef4a",
-      "bytes": 802
+      "sha256": "deeb50dd2171b1d7418d9c6f3fe3a1b068ad42826690a73ab23abadfde767eb9",
+      "bytes": 1209
     },
     {
       "path": "CITATION.cff",
-      "sha256": "46df5c2e34e2909081e9b809e554d1bf8f8a925f4755b3e6c294483db71892f4",
-      "bytes": 614
+      "sha256": "1ec39bd3c14a775403ab45c405d16ca975852718b824a313a989f76864e49c1c",
+      "bytes": 855
     },
     {
       "path": "LICENSE",
-      "sha256": "23a8c29a8b78b197a50fc1ccfac07c5c990b25a0b69701e387b99c9bf2eb0ab2",
-      "bytes": 316
+      "sha256": "c263d1b105989241677dcdf8082d031ccb110198313426d65f8e83d2121414c8",
+      "bytes": 1074
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "cf64a7a37272306f4c8b6f46139b387e4d30ab6fd3c40435e8ed58a4719ba660",
+      "bytes": 1027
     },
     {
       "path": "README.md",
-      "sha256": "b41d2a77d203d78d28bbddf75e305a71a62f0e2ad95dac3a2bd2918038a7ea93",
-      "bytes": 5382
+      "sha256": "2976e9c294bb914c1e4f88deda6edd661f324f1d81b65c6a74d01b6a9594c833",
+      "bytes": 5283
     },
     {
       "path": "code/accounting.py",
@@ -254,19 +265,29 @@
       "bytes": 16270
     },
     {
+      "path": "docs/VN30TRI_access_request_vi.md",
+      "sha256": "3420cb521146e8ec4cd9c16f8de98e8b233a352d56fe1951c987e8e871742e2f",
+      "bytes": 7664
+    },
+    {
+      "path": "docs/VN30TRI_api_options_vi.md",
+      "sha256": "dde752fb71eed7dc002ba30a2486354b5e03f5028a82fbb09695768e0a12bf83",
+      "bytes": 7026
+    },
+    {
       "path": "docs/benchmark_source_status.md",
-      "sha256": "c89a3b1ec0377182ac75e05df29171500953508792cfda6c285d3c9c74cbf7ee",
-      "bytes": 3827
+      "sha256": "d7f3564a6ab35fed0c92382bc912a6aa6a3bb9901cee2e683fc492e70ec73ad3",
+      "bytes": 5863
     },
     {
       "path": "docs/data_dictionary.md",
-      "sha256": "76ba92cdc7d1b2e2fbf08e62150a56245075f0369340074e183b713d91e72899",
-      "bytes": 5310
+      "sha256": "815921ad034244fc6f7e83ebc078e345d5b1c85158654afba43ba704302ee575",
+      "bytes": 5400
     },
     {
       "path": "docs/deliverables.csv",
-      "sha256": "eeccd697efa39895d6f9a7956e8c9d13b8395f5f8d5dd92f03f9aa7ae721cc3f",
-      "bytes": 1129
+      "sha256": "fa7a7ebb9ba91c1ad062b6d2b7deeeb88f0c32a2022d8ceda0256764ff3674c8",
+      "bytes": 1100
     },
     {
       "path": "docs/methodology.md",
@@ -275,13 +296,13 @@
     },
     {
       "path": "docs/paper_handoff_vi.md",
-      "sha256": "78809f072ae56d99418fad7f6dfbe80b374a977bdcb759f7fcb47489664083b1",
-      "bytes": 10740
+      "sha256": "bbb9e8a3f0de947f3b703e56e12f8474e1bb8931dbf07e70281422150883f467",
+      "bytes": 10292
     },
     {
       "path": "docs/release_review.md",
-      "sha256": "881d4bf31d36bc50b742ae03acfa26300a68662987ac396f402a976088011a3b",
-      "bytes": 1341
+      "sha256": "0afb6bb774ac4344f7a5311e924b30b50e34baeed8626b20e67ec752ab4c347b",
+      "bytes": 1113
     },
     {
       "path": "docs/reproducibility.md",
@@ -410,18 +431,28 @@
     },
     {
       "path": "reproducibility/verification.json",
-      "sha256": "ef9f5672a473068df2ae68a168a9d93d286f09ac090fcaf771e5e5f649a61cae",
-      "bytes": 439
+      "sha256": "5f894b02321da11eb522a47e1d8a2a17d1d78cc9b0e4f7e62496d2daa957c3dd",
+      "bytes": 400
     },
     {
       "path": "reproducibility/verify_release.py",
-      "sha256": "92fdd17b1f073e4d7fbc86853c6f148ed6007964764cce2853731f3441ffead3",
-      "bytes": 3397
+      "sha256": "a86c76a499d3b7cfd9d32cf423bf7ef8fee061f51209b6a30801eb0a0a5c72bc",
+      "bytes": 3402
+    },
+    {
+      "path": "reproducibility/vn30tri_acquisition_20261112.json",
+      "sha256": "3c0d4fb7b1561e5aab596932bc083eb52ff2aef4c1a3b3253fe67917f0cd6dc5",
+      "bytes": 2213
+    },
+    {
+      "path": "reproducibility/vn30tri_acquisition_20261118.json",
+      "sha256": "0579629fd128ddab50993cf8bf475a41e53a01aa07c33497e803ac82ef0b84ce",
+      "bytes": 3824
     },
     {
       "path": "reproducibility/write_handoff.py",
-      "sha256": "dd54aac0f871e99ab47ba03b76e4bf597e889e9143632314372413398e7ca1cd",
-      "bytes": 10987
+      "sha256": "542ea34f99e685c7310bf4c04c2bdac071a344673454878044978075e171bc0c",
+      "bytes": 10569
     },
     {
       "path": "requirements.txt",

@@ -1,9 +1,13 @@
-# Author review before public release
+# Research release 0.1.0
 
-Candidate version 0.1.0-rc1 is prepared locally. The existing public development repository is khangng2611/portfolio-optimization. This isolated research tree can be published as its research release or as a dedicated research repository after author review.
+Release date: 2026-11-18. D10: public repository and versioned software release.
 
-Confirm the complete authors/contributors for CITATION.cff. Nguyen Phuc Khang is the known provisional contributor used in the current draft. Confirm the project-code license and allowed redistribution of derived dated outputs. Raw vendor prices, private ledgers and fitted objects have been excluded. Review dependency licenses independently from project-code licensing.
+The user requested publication of this dedicated research repository and confirmed the author name **Khang Phuc Nguyen** and **MIT** for original project software on 2026-11-18. Raw vendor prices, private input ledgers, secrets and fitted objects are excluded. NOTICE.md distinguishes software licensing from source-data rights. Vendor datasets are not described as open data.
 
-Then publish the approved candidate at a stable versioned public link, record its source commit/tag and verify accessibility. Add a DOI only if an archive service has actually assigned one. Fill the paper's Data/Code Availability and citation from that verified public release. No unissued DOI or future repository URL is used here.
+Repository: https://github.com/khangng2611/vietnam-portfolio-research
 
-This final approval follows guide_5 section8.6, which introduces public release with “Khi nội dung đã được nhóm tác giả duyệt”. The user's current request authorizes organizing and preparing the research package. License choice, full author list and the publication destination remain decisions for the author group.
+Version: v0.1.0. Citation URL: https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.1.0
+
+The original local author-review tag v0.1.0-rc1 is preserved. CITATION.cff supplies the confirmed author, version, release date and version URL. No DOI has been assigned.
+
+D01/D02 VN30TRI and dependent D04 remain pending. The frozen version tree is https://github.com/khangng2611/vietnam-portfolio-research/tree/v0.1.0. D10 completion concerns the public repository and version link; it does not imply completion of the pending VN30TRI analyses.

@@ -27,9 +27,9 @@ def main():
     status = markdown(['ID', 'Trạng thái', 'Đầu ra'], [[r.item, r.status, r.description] for r in progress.itertuples()])
     text = f'''# Bàn giao bằng chứng và research repository cho paper_5
 
-Ngày 11/11/2026. Phiên bản local release candidate0.1.0-rc1.
+Ngày 18/11/2026. Phiên bản 0.1.0.
 
-Đã tổ chức source khoa học và kết quả cần cho paper trong paper5_research, với entry point tái tạo bảng/hình chạy độc lập từ thư mục này. Phần bổ sung trích lại dữ liệu quyết định/return/holdings đã lưu. Kết quả chính C1/B1/B2 và A/B được đối chiếu theo quy ước đã nghiệm thu. D01/D02 và D04 còn chờ daily VN30TRI hợp lệ. D10 đã có package để duyệt, cần xác nhận tác giả, license và phạm vi public trước khi có link release để cite.
+Đã tổ chức source khoa học và kết quả cần cho paper trong paper5_research, với entry point tái tạo bảng/hình chạy độc lập từ thư mục này. Phần bổ sung trích lại dữ liệu quyết định/return/holdings đã lưu. Kết quả chính C1/B1/B2 và A/B được đối chiếu theo quy ước đã nghiệm thu. D01/D02 và D04 còn chờ daily VN30TRI hợp lệ. D10 có metadata tác giả và MIT đã xác nhận; trạng thái public/version được ghi riêng trong hồ sơ phát hành.
 
 ## 1. Trạng thái D01–D12
 
@@ -84,15 +84,17 @@ code/reproduce.py là entry point tái tạo bảng/hình cho người đọc t�
 
 ## 7. D10/D12 — Release và citation
 
-Đã chuẩn bị README, CITATION.cff ở mức dự thảo, trạng thái LICENSE, requirements tối giản, source-map, dữ liệu dẫn xuất, tests và manifest. Candidate có Git commit/tag local riêng và gói ZIP để rà soát. Repository phần mềm hiện hữu ở upstream khangng2611/portfolio-optimization. Chưa tạo public release cho candidate này, chưa có DOI được cấp.
+Tác giả đã xác nhận tên **Khang Phuc Nguyen** và chọn **MIT** cho mã nguồn do nhóm sở hữu ngày 18/11/2026. Bản v0.1.0 được chuẩn bị tại repository nghiên cứu riêng. Trạng thái phát hành được ghi trong docs/release_review.md và docs/deliverables.csv; CITATION.cff ghi metadata trích dẫn.
 
-Trước khi đưa link vào paper, nhóm tác giả cần xác nhận danh sách tác giả/contributors, license cho code và quyền chia sẻ derived outputs, rồi chọn publish dưới upstream hiện tại hoặc repository nghiên cứu riêng. Khi release đã tồn tại, kiểm tra URL theo version/tag hoặc DOI thực tế và cập nhật CITATION.cff. guide_5 mục8.6 đặt bước này sau khi nội dung được tác giả duyệt.
+Đường dẫn phiên bản: https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.1.0
 
-Đề xuất Data/Code Availability để nhóm tác giả hoàn thiện sau khi có public link thực
+> Nguyen, Khang Phuc (2026). Vietnam Long-Only Multi-Asset Portfolio — Research Code and Derived Results (Version 0.1.0) [Software]. GitHub.
 
-> The versioned research repository contains the portfolio methodology, original scientific source snapshots, dated strategy outputs, and scripts for regenerating the reported tables and figures. Vendor price histories and restricted historical records are available through their respective providers under applicable access conditions. The release documents which analyses can be reproduced from the shared outputs and which require authorized source data.
+Đề xuất Data/Code Availability:
 
-Cần thêm public version permalink đã kiểm tra vào câu trên trước submission. Metadata tác giả hiện dùng Nguyen Phuc Khang ở mức contributor đã biết và chờ xác nhận đồng tác giả. LICENSE chưa cấp giấy phép mở mới cho code hoặc quyền vendor data.
+> The versioned research repository contains the portfolio methodology, original scientific source snapshots, dated strategy outputs, and scripts for regenerating the reported tables and figures. Vendor price histories and restricted historical records require access through their respective providers. The release documents which analyses can be reproduced from the shared outputs and which require authorized source data.
+
+NOTICE.md phân biệt license phần mềm với quyền dữ liệu. Dữ liệu giá gốc và fitted objects không nằm trong repository. Chưa có DOI được cấp. Tag local v0.1.0-rc1 ban đầu được giữ nguyên. D01/D02/D04 còn chờ dữ liệu VN30TRI hợp lệ.
 
 ## 8. Đối chiếu và giới hạn
 

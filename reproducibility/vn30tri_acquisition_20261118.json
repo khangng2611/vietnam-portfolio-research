@@ -1,0 +1,88 @@
+{
+  "started_at": "2026-11-18T08:45:51.278257+00:00",
+  "packages": {
+    "vnstock": "6.0.1",
+    "vnstock-oapi": "0.1.2",
+    "pandas": "3.1.1",
+    "numpy": "2.5.5"
+  },
+  "request": {
+    "symbol": "VN30TRI",
+    "start": "2020-01-14",
+    "end": "2026-04-29",
+    "interval": "1D",
+    "floating": null
+  },
+  "attempts": [
+    {
+      "source": "dnse",
+      "started_at": "2026-11-18T08:45:51.287217+00:00",
+      "status": "error",
+      "error_type": "CredentialError",
+      "code": "VNSTOCK_CREDENTIAL_MISSING",
+      "message": "Chưa có khoá: DNSE_API_KEY, DNSE_API_SECRET. Đặt trong biến môi trường, tệp .env, hoặc chạy `vnstock keys set dnse` (code=VNSTOCK_CREDENTIAL_MISSING, source=dnse)",
+      "completed_at": "2026-11-18T08:45:52.095634+00:00"
+    },
+    {
+      "source": "fhsc",
+      "started_at": "2026-11-18T08:45:52.095976+00:00",
+      "status": "error",
+      "error_type": "CredentialError",
+      "code": "VNSTOCK_CREDENTIAL_MISSING",
+      "message": "Chưa có khoá: FHSC_API_KEY. Đặt trong biến môi trường, tệp .env, hoặc chạy `vnstock keys set fhsc` (code=VNSTOCK_CREDENTIAL_MISSING, source=fhsc)",
+      "completed_at": "2026-11-18T08:45:52.099291+00:00"
+    },
+    {
+      "source": "ssi",
+      "started_at": "2026-11-18T08:45:52.100050+00:00",
+      "status": "error",
+      "error_type": "CredentialError",
+      "code": "VNSTOCK_CREDENTIAL_MISSING",
+      "message": "Chưa có khoá: SSI_API_KEY, SSI_API_SECRET. Đặt trong biến môi trường, tệp .env, hoặc chạy `vnstock keys set ssi` (code=VNSTOCK_CREDENTIAL_MISSING, source=ssi)",
+      "completed_at": "2026-11-18T08:45:52.103275+00:00"
+    },
+    {
+      "source": "tcbs",
+      "started_at": "2026-11-18T08:45:52.103818+00:00",
+      "status": "error",
+      "error_type": "CredentialError",
+      "code": "VNSTOCK_CREDENTIAL_MISSING",
+      "message": "Chưa có khoá: TCBS_API_KEY. Đặt trong biến môi trường, tệp .env, hoặc chạy `vnstock keys set tcbs` (code=VNSTOCK_CREDENTIAL_MISSING, source=tcbs)",
+      "completed_at": "2026-11-18T08:45:52.105832+00:00"
+    }
+  ],
+  "review_date": "2026-11-18",
+  "status": "NO_ADMITTED_DAILY_SERIES",
+  "installation": {
+    "isolated": true,
+    "original_research_vnstock": "4.0.4",
+    "package_index": "https://vnstocks.com/api/packages",
+    "command": "python -m pip install --extra-index-url https://vnstocks.com/api/packages vnstock",
+    "pip_check": "No broken requirements found."
+  },
+  "official_documentation": [
+    "https://vnstocks.com/docs/vnstock/lich-su-phien-ban",
+    "https://vnstocks.com/docs/vnstock/v6/thi-truong-market",
+    "https://vnstocks.com/docs/vnstock/v6/gioi-thieu"
+  ],
+  "interpretation": "All calls rejected for missing source credentials. No inference about vendor symbol support, history depth, or research/redistribution rights can be drawn.",
+  "required_window": {
+    "first_anchor": "2020-02-18",
+    "last_date": "2026-04-29",
+    "IS_returns": 906,
+    "OOS_returns": 641,
+    "unique_required_levels": 1548
+  },
+  "raw_daily_rows_downloaded": 0,
+  "D01": "PENDING_SOURCE",
+  "D02": "PENDING_SOURCE",
+  "D04": "PENDING_D01_D02",
+  "experiments_rerun": false,
+  "purchases_or_vendor_messages_sent": false,
+  "evidence": {
+    "reproducibility/artifacts/vnstock-probe-20261118/environment.txt": "90a69aae766cbf522013e896ce57ee3b2514e14580e64e15cfe6ce26b5a14ea9",
+    "reproducibility/artifacts/vnstock-probe-20261118/install.log": "e74ef38e4ff77af2596a0908f8d983e12f98818a63ff87bfcbc3607c14611189",
+    "reproducibility/artifacts/vnstock-probe-20261118/probe.py": "899c2e47412ccdb3a5ac4207c04e4f3d2d0de5513573910fdf94ce8bf38927a6",
+    "reproducibility/artifacts/vnstock-probe-20261118/probe_result.json": "94b40da3cd0af0ac3fd200d1159253cf8a501aa8808ad95f389f04b412bd1dca"
+  }
+}

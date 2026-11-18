@@ -56,8 +56,8 @@ def main():
             raise ValueError(f'Restricted file in release candidate {name}')
     if pd.read_csv(reference / 'benchmark_status.csv').accepted_level_rows.sum() != 0:
         raise ValueError('Update benchmark status after admitting real data')
-    summary.update(status='VERIFIED_LOCAL_CANDIDATE', tests_passed=6, original_source_mappings=len(source_map),
-                   publication='PENDING_AUTHOR_LICENSE_AND_DERIVED_DATA_APPROVAL', VN30TRI='PENDING_SOURCE')
+    summary.update(status='VERIFIED_RESEARCH_PACKAGE', tests_passed=6, original_source_mappings=len(source_map),
+                   publication=statuses.loc[statuses.item.eq('D10'), 'status'].item(), VN30TRI='PENDING_SOURCE')
     (ROOT / 'reproducibility/verification.json').write_text(json.dumps(summary, indent=2) + '\n')
     print(json.dumps(summary))
 

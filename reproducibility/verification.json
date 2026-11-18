@@ -5,9 +5,9 @@
   "episodes": 294,
   "attribution_max_daily_error": 3.0184188481996443e-16,
   "attribution_max_terminal_error": 6.261657858885883e-14,
-  "status": "VERIFIED_LOCAL_CANDIDATE",
+  "status": "VERIFIED_RESEARCH_PACKAGE",
   "tests_passed": 6,
   "original_source_mappings": 41,
-  "publication": "PENDING_AUTHOR_LICENSE_AND_DERIVED_DATA_APPROVAL",
+  "publication": "COMPLETE",
   "VN30TRI": "PENDING_SOURCE"
 }

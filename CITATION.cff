@@ -1,11 +1,16 @@
 cff-version: 1.2.0
-message: "Local release candidate. Confirm the author list, project license and published version URL before using this citation in a manuscript."
+message: "Please cite this versioned research software when using its methodology, code or reported results."
 type: software
 title: "Vietnam Long-Only Multi-Asset Portfolio — Research Code and Derived Results"
-version: 0.1.0-rc1
+version: 0.1.0
+date-released: 2026-11-18
+license: MIT
+url: "https://github.com/khangng2611/vietnam-portfolio-research"
+repository-code: "https://github.com/khangng2611/vietnam-portfolio-research"
+repository-artifact: "https://github.com/khangng2611/vietnam-portfolio-research/releases/tag/v0.1.0"
 authors:
   - family-names: Nguyen
-    given-names: Phuc Khang
+    given-names: Khang Phuc
 abstract: "Representative equity selection and capital allocation with Black–Litterman, saved XGBoost views, a feasible fixed-weight comparator, and descriptive portfolio evidence."
 keywords:
   - portfolio optimization

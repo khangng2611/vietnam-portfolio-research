@@ -1,5 +1,12 @@
 # Changes
 
+## 0.1.0 — 2026-11-18
+
+- Publish the first public research version with the confirmed author Khang Phuc Nguyen and MIT software license.
+- Add versioned citation metadata and separate software/data scope in NOTICE.md.
+- Record Vnstock 6.0.1 runtime attempts: all four history sources require credentials; D01/D02/D04 remain pending.
+- Preserve accepted numerical results and the original v0.1.0-rc1 tag.
+
 ## 0.1.0-rc1 — 2026-11-11
 
 - Curated accepted A/B/C code and derived dated research results in a standalone release candidate.

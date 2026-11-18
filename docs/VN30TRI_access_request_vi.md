@@ -1,6 +1,23 @@
 # Yêu cầu dữ liệu để hoàn tất D01, D02 và D04
 
-Cập nhật 12/11/2026. Chưa nhận được chuỗi daily VN30TRI đủ điều kiện để chạy các phân tích. Đã kiểm tra trực tiếp chức năng xuất dữ liệu TradingView và một danh mục nhà cung cấp bổ sung.
+Cập nhật 18/11/2026. Chưa nhận được chuỗi daily VN30TRI đủ điều kiện để chạy các phân tích. Đã chạy thử Vnstock mới nhất, ngoài kiểm tra chức năng xuất TradingView và các nguồn trước đó.
+
+## Kiểm tra Vnstock mới nhất
+
+Đã cài và chạy Vnstock 6.0.1 cùng vnstock-oapi 0.1.2 trong môi trường tạm riêng. Bản 4.0.4 trong môi trường nghiên cứu được giữ nguyên. Đã gọi lịch sử ngày của đúng mã VN30TRI từ 14/01/2020 đến 29/04/2026 qua cả bốn nguồn hỗ trợ index OHLCV theo tài liệu hiện hành:
+
+| Nguồn | Kết quả chạy thực tế |
+| --- | --- |
+| DNSE | Thiếu DNSE_API_KEY và DNSE_API_SECRET |
+| FHSC | Thiếu FHSC_API_KEY |
+| SSI | Thiếu SSI_API_KEY và SSI_API_SECRET |
+| TCBS | Thiếu TCBS_API_KEY |
+
+Cả bốn trả CredentialError, mã VNSTOCK_CREDENTIAL_MISSING, trước khi lấy dữ liệu; tổng cộng tải được 0 dòng. Vì vậy chưa xác minh được vendor nào có đúng VN30TRI, mức độ phủ lịch sử hoặc quyền nghiên cứu. Không thể kết luận VN30TRI được hoặc không được hỗ trợ chỉ từ lỗi thiếu khóa. [Nhật ký máy đọc được](../reproducibility/vn30tri_acquisition_20261118.json), [tài liệu lịch sử chỉ số](https://vnstocks.com/docs/vnstock/v6/thi-truong-market).
+
+Thế hệ 6 yêu cầu khóa Open API do người dùng đăng ký tại nguồn. Nếu đã có tài khoản được phép truy cập, cấu hình khóa ngay trên máy bằng `vnstock keys set <nguồn>` trong môi trường Vnstock 6 và mở phiên theo yêu cầu của nguồn. Không gửi API secret hoặc OTP qua chat. Sau khi có quyền truy cập vẫn cần xác nhận đúng series, kiểm tra coverage và điều kiện sử dụng trước khi chạy benchmark. Ngoài quyền của nguồn, lớp chuẩn hóa vnstock 6 thuộc bản Mở rộng; cần xác nhận quyền phần mềm nếu tiếp tục dùng lớp này. [Giới thiệu thế hệ 6](https://vnstocks.com/docs/vnstock/v6/gioi-thieu).
+
+Một bản export được phép sử dụng vẫn đủ để hoàn tất công việc, không bắt buộc phải dùng API. D01, D02 và D04 chưa có kết quả VN30TRI thực nghiệm; các kết quả danh mục hiện có được giữ nguyên.
 
 ## Kết quả kiểm tra truy cập
 
